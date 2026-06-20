@@ -1,0 +1,141 @@
+version: '3.8'
+
+services:
+  # Message Queue
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Node.js API Backend
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - PORT=3000
+      - RABBITMQ_URL=amqp://rabbitmq
+      - ENABLE_RABBITMQ=true
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - app-network
+
+  # Python Conductor (Orchestrator)
+  orchestrator:
+    build:
+      context: ./backend/mcp-ai
+    command: python orchestrator_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # Map Agent
+  map-agent:
+    build:
+      context: ./backend/mcp-ai
+    command: python map_agent_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # Weather Agent
+  weather-agent:
+    build:
+      context: ./backend/mcp-ai
+    command: python weather_agent_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # Itinerary Agent
+  itinerary-agent:
+    build:
+      context: ./backend/mcp-ai
+    command: python itinerary_agent_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # Event Agent
+  event-agent:
+    build:
+      context: ./backend/mcp-ai
+    command: python event_agent_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # Budget Agent
+  budget-agent:
+    build:
+      context: ./backend/mcp-ai
+    command: python budget_agent_mcp.py
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  # React Frontend (served via Nginx)
+  frontend:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

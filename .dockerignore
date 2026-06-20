@@ -1,0 +1,29 @@
+# Version Control
+.git
+.gitignore
+
+# Node dependencies and build assets
+node_modules
+dist
+npm-debug.log
+
+# Python virtual environments and caches
+venv
+.venv
+**/venv
+**/.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Archives and logs
+*.zip
+*.tar.gz
+*.tgz
+logs
+*.log
+
+# Local environments
+.env
+.env.*
