@@ -5,6 +5,7 @@ venv/
 .venv/
 **/venv/
 **/__pycache__/
+backend/sentiment/Models/ReviewSA_model.pth
 
 # Build and cache outputs
 dist/
