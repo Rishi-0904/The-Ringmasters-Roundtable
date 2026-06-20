@@ -1,1203 +1,0 @@
-€•>      Œxgboost.sklearn”Œ
-XGBClassifier”“”)”}”(Œn_estimators”NŒ	objective”Œbinary:logistic”Œ	max_depth”NŒ
-max_leaves”NŒ max_bin”NŒgrow_policy”NŒ
-learning_rate”NŒ	verbosity”NŒ booster”NŒtree_method”NŒgamma”NŒmin_child_weight”NŒmax_delta_step”NŒ	subsample”NŒsampling_method”NŒcolsample_bytree”NŒcolsample_bylevel”NŒcolsample_bynode”NŒ	reg_alpha”NŒ
-reg_lambda”NŒscale_pos_weight”NŒ
-base_score”NŒ missing”Gø      Œnum_parallel_tree”NŒrandom_state”NŒn_jobs”NŒmonotone_constraints”NŒinteraction_constraints”NŒimportance_type”NŒdevice”NŒvalidate_parameters”NŒenable_categorical”‰Œ
-feature_types”NŒfeature_weights”NŒmax_cat_to_onehot”NŒmax_cat_threshold”NŒmulti_strategy”NŒeval_metric”NŒearly_stopping_rounds”NŒ	callbacks”NŒ
-n_classes_”KŒ_Booster”Œxgboost.core”Œ Booster”“”)”}”Œhandle”Œbuiltins”Œ	bytearray”“”BBð {L       Config{L        learner{L       
-generic_param{L       deviceSL       cpuL       fail_on_invalid_gpu_idSL       0L       n_jobsSL       0L        nthreadSL       0L       random_stateSL       0L       seedSL       0L       seed_per_iterationSL       0L       validate_parametersSL       1}L       gradient_booster{L       gbtree_model_param{L       num_parallel_treeSL       1L       	num_treesSL       100}L       gbtree_train_param{L       process_typeSL        defaultL       tree_methodSL       autoL        updaterSL       grow_quantile_histmakerL       updater_seqSL       grow_quantile_histmaker}L       nameSL       gbtreeL       specified_updaterFL       tree_train_param{L       alphaSL       0L       	cache_optSL       1L       colsample_bylevelSL       1L       colsample_bynodeSL       1L       colsample_bytreeSL       1L       etaSL       0.300000012L       gammaSL       0L       grow_policySL       	depthwiseL       interaction_constraintsSL        L       lambdaSL       1L       
-learning_rateSL       0.300000012L        max_binSL       256L       max_cat_thresholdSL       64L       max_cat_to_onehotSL       4L       max_delta_stepSL       0L       	max_depthSL       6L       
-max_leavesSL       0L       min_child_weightSL       1L       min_split_lossSL       0L       monotone_constraintsSL       ()L       refresh_leafSL       1L       	reg_alphaSL       0L       
-reg_lambdaSL       1L       sampling_methodSL        uniformL       sketch_ratioSL       2L       sparse_thresholdSL       0.20000000000000001L       	subsampleSL       1}L        updater[#L       {L       hist_train_param{L       debug_synchronizeSL       0L       extmem_single_pageSL       0L       max_cached_hist_nodeSL       18446744073709551615}L       nameSL       grow_quantile_histmaker}}L       learner_model_param{L       
-base_scoreSL       9.1923773E-1L       boost_from_averageSL       1L       	num_classSL       0L       num_featureSL       2500L       
-num_targetSL       1}L       learner_train_param{L        boosterSL       gbtreeL       disable_default_eval_metricSL       0L       multi_strategySL       one_output_per_treeL       	objectiveSL       binary:logistic}L        metrics[#L       {L       nameSL        logloss}L       	objective{L       nameSL       binary:logisticL       reg_loss_param{L       scale_pos_weightSL       1}}}L        version[#L       ii i }L       Model{L        learner{L       
-attributes{}L       
-feature_names[#L        L       
-feature_types[#L        L       gradient_booster{L       model{L       gbtree_model_param{L       num_parallel_treeSL       1L       	num_treesSL       100}L       iteration_indptr[#L       ei iiiiiii ii	i
-iii
-iiiiiiiiiiiiiiiiiii i!i"i#i$i%i&i'i(i)i*i+i,i-i.i/i0i1i2i3i4i5i6i7i8i9i:i;i<i=i>i?i@iAiBiCiDiEiFiGiHiIiJiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi[i\i]i^i_i`iaibicidL       	tree_info[#L       di i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i L       trees[#L       d{L       base_weights[$d#L       4oz‚=èt¿Ñ|¯¾Eƒ?vµ ¾
-¿…†?€Wë¾ó³º 6›¿ðl> a=T2¾º³?UËÀ»9>0W½"ú¿rï„>‹–q½ªOc¿Xþ½½ê'L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                              L       idi L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       BÍñBJê(    B)Ë@EepAä‰°    ?Ë6     A®¸”A)‚b        AÙ4@i @ÒhÈ                            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-   
-   
-            L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  ¿Ñ|¯>ªª«?   >€  ¿…†?   ¾ó³>ªª«>ªª«> a=T2?   >€  >€  >0W½"ú¿rï„>‹–q½ªOc¿Xþ½½ê'L       
-split_indices[$l#L          œ  ú      4  Y  ð            È  ±          	e  %  	D                            L       
-split_type[$U#L                              L       sum_hessian[$d#L       C#ŸÕC!?©@
-ÿBân`B@!åBÝb@!‹¯B;ù˜?…	ŸBÍÊâ@ùr
-B3\ù@	É÷BŸ‹A¸µ\@ÕÏw?ŽŠOB›u>@	ŸA®œ¡?¡‹¯@œËW?ä~L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       23L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       #=
-Ù¾hN{?`U³½9(¿ï@Œ?qÆP¾7ÓJ¼‹iÔ¿HÔÀ
-o%¼)E6?}™+;Zkœ¾Fi?;€ÛÀÁ½ùà?„9=¾¾§´>—4’?mvÆ¿F¿`=e¿O¢$>Ÿj=âæ½½‰åK¿qñ>•< =WžÇ¾Ã2þ>3“Þ¾Ñw¿=$àL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       #                                   L       idiL       
-left_children[$l#L       #                	   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿ   !ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       #B¦îBÝÐ@’
-èA{8ó@¼¾È?Ò«€    AxIo    @Û    ?	ñÀ    As—@ÆÞ¼@f 0    >³     AMÁå    >ø‚€@fZR    ?æ€®                                        L        parents[$l#L       #ÿÿÿ                                                 	   	         
-   
-                                          L       right_children[$l#L       #               
-   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ       ÿÿÿÿ   "ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       #>€  >€  ?   ?   >ªª«>€  ¾7ÓJ>ªª«¿HÔ>ªª«¼)E6>ªª«;Zkœ?   >€  >€  ½ùà?   =¾>€  >—4’>€  >€  ¿`=e>€  >Ÿj=âæ½½‰åK¿qñ>•< =WžÇ¾Ã2þ>3“Þ¾Ñw¿=$àL       
-split_indices[$l#L       #  ú   T  Y  ä  ±        È      ‹      ›      “  %  i            	«      v  	Ÿ      	D                                        L       
-split_type[$U#L       #                                   L       sum_hessian[$d#L       #C%BBüçiB9“Bè¿¹A!=€B¾à?¯V`Båög?²TRA‚ê?ÅÔ³Bse?éoLB»?¿AªÚ¡@Þ8?Ì
-mB
-WÎ?ƒrÞB©y	A5µA–šr@"w@šé@46B!?æ×¯B »g@‹ÚAŒÈ?¨j¥?ÁÁ1?‚A½?…ž/?†Ê<L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       35L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       =''¾8}?PØe½<ãÇ¿ºÊý?e\O¾
-|K;Îˆµ¿:³™¿Oó»¿Q ó?sÅ;0tx=:‡Ý¿2;ô¿¾Sa>%_™?z‘‚=²=ÈT2¾å=«¾0£Š¿.Š>›‘2=½,:;Ã[c>”REL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                  L       idiL       
-left_children[$l#L                       	   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       A¾NõAŠåk@hõ˜Aw‘@¯JŒ?À¨     A3æ¸    @÷ÿ	    ? €    Aì    @!ÏÔ    >¡»À    @þ™                            L        parents[$l#L       ÿÿÿ                                                 	   	         
-   
-                  L       right_children[$l#L                      
-   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >€  >ªª«?   ?   >ªª«>€  ¾
-|K?€  ¿:³™>I%¿Q ó>ªª«;0tx?   ¿2;ô>ªª«>%_™>€  =²?   ¾å=«¾0£Š¿.Š>›‘2=½,:;Ã[c>”REL       
-split_indices[$l#L         ú  	  Y   4  —        	E       C      ›      Q      š       T      “                            L       
-split_type[$U#L                                  L       sum_hessian[$d#L       C!ä·CïA÷=BõKåAÏÉAêŽo?ÇüãBñù ?Ô·˜@ÔJ?Þ9AÜ˜?èÍvBïã‹?…_@‹FV@•éAÔ 7?€BéÐn@Bc‘@48E?Ä¨ÌAÅã9?áÏéBØkúA#£L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       27L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <ÐÿJ=©óm¿%s’½‘Õ?]CC¾FÔë?Þ4?nJ¼»}Æ¾È¿$°*?>$¾„¶þ>”+Q<Ý¿Æ½ubÍ¿‘0?`‘â¾Og»Ì%‹¿Ø7¾!ñ¿&[ó>›!`=›˜ÇL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                L       idiL       
-left_children[$l#L             ÿÿÿÿ          	      
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       Až½çA”¯B    A1J^?Ñp A1ò@Œ¸ñ?p€    Aøñ    @W²¤            @ÍCU@‹°˜?–“¸                            L        parents[$l#L       ÿÿÿ                                                 	   	                        L       right_children[$l#L             ÿÿÿÿ         
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  ¿%s’>ªª«>*ª«?€  ?   ?   ¼»}Æ>ªª«¿$°*>€  ¾„¶þ>”+Q<Ý¿Æ?   >€  >ªª«¾Og»Ì%‹¿Ø7¾!ñ¿&[ó>›!`=›˜ÇL       
-split_indices[$l#L         j  ú      È  4    µ  °      —       í              ä  .  —                            L       
-split_type[$U#L                                L       sum_hessian[$d#L       CönCä»@Dl”C x”AÃa;BÛ' A—( A¶ÀÕ?ÊYBØ ¾?ÇÐeAŽ×º?…jA®QÛ?†ïžBÈÒ@ÿ.¿A‚T¾?È/¶BÅ^›?­æ@Äò?ì‡6ANÆø@WŠL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       25L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <û’=Nw¿)·&=Ä`w¿:f¼Xm]?CŒ=\wæ¿W’?aã“½ù†»«uÆ>FÆ¾º©w¿[Z>–XÔ½" <\û¸¾ Æ†¾Gl>Ué+L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	      
-   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       A<¿ôADí£    A,~ÿ    @å%/@O`X@Ã•™@WóZ@ Oü    @¾,ò    @-±ø                            L        parents[$l#L       ÿÿÿ                                                 	   	         
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¿)·&>€  ¿:f>ªª«?   ?   >ªª«?   ½ù†?   >FÆ?€  ¿[Z>–XÔ½" <\û¸¾ Æ†¾Gl>Ué+L       
-split_indices[$l#L         Ñ   4      ú      	  Y  “  —        µ      ¡                            L       
-split_type[$U#L                            L       sum_hessian[$d#L       CºC©^?¬.hCÖÅ@4¦.Bþ”Až7ÖBìÖÅA
-FzA‘j€?ÌÕmBß”#@Ô*@Ï¾b@	&A…Y?ÅòqB×ú@‡B“@­˜ˆ?ˆ—fL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <à÷=[j…¿¢“'½!7?BI¬¾£|¾ûg¾Ãï?ÌÅ?Zý~½¨Rú¾G‘?;O9?,¬ô¾1²l?e=ã¾}»>‰Ç'>—/½½&Ø?S¨½Þe>>’´T=I{Ê½»©>_{‘>•„‚=¼L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                    L       idiL       
-left_children[$l#L                       	ÿÿÿÿÿÿÿÿ      
-   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       A „âA¬Å?P@Õd?óQX        @ÑjŽ@5V¬>h_     @É“‰?ø[à@.êÜ    >êw€    @»            ?¸ˆ                            L        parents[$l#L       ÿÿÿ                                                 	   	               
-   
-                  L       right_children[$l#L                      
-ÿÿÿÿÿÿÿÿ         ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  >€  >ªª«?   ¾£|¾ûg?   ?   >ªª«½¨Rú?   >€  >€  ¾1²l>ªª«=ã?   >‰Ç'>—/½½&Ø>ªª«½Þe>>’´T=I{Ê½»©>_{‘>•„‚=¼L       
-split_indices[$l#L         j  ú  	Ÿ  È  -          	}  µ  ÿ      y  	«   í      ß      “              —                            L       
-split_type[$U#L                                    L       sum_hessian[$d#L       CDºCCü@€ÚBýÏA{‰E@Œ?óFdBÝ@”A~±ÕAh>?—Ð:BÎ¾@ènAjV)?¢ÝeATíú?
-BÆ•‹@‚‘)@°b)?ÞõAO‹¤?ÖT&A@¥k?¢DyB¼Ì	@œ˜!Aä¨@F›ïL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       29L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<ŸnU=an¾áXu;öä4>ŽLo=
-Úû¾ç1=‘ˆ)¾È] =Ñ¾Ññ
-=6±¾‰Z¿L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-@øÎ@½l    @µn    @Ö¥W    @ÂX†    @Æíî            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ¾áXu?€  >ŽLo?   ¾ç1?€  ¾È] ?   ¾Ññ
-=6±¾‰Z¿L       
-split_indices[$l#L       
-    “      Ñ       4      	E      	Ÿ            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-CßqCoš@õ”C@ÌkC›ó?·–C÷V@)'ACT?ð€ÚBú.@ŸêL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;¾ûÅ<ýå
-¿•K½ ö?#ïþ;§Z_¿Žü­?G®g½„†g=œ¾èÖ¾Ò¯¦½#iO?Wê¼<¿fE»ü[*>>Œ^¼=‚oò<h ó¾^6L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idi L       
-left_children[$l#L             ÿÿÿÿ          	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @Ãá@µªq    @±æ*?è|x@¥6D?vó°>ñ“0    @Ž@{            >–Z    @–^ì                    L        parents[$l#L       ÿÿÿ                                                 	   	   
-   
-      L       right_children[$l#L             ÿÿÿÿ         
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  ¿•K?   ?   ?   >ªª«>€  ½„†g?   ¾èÖ¾Ò¯¦½#iO>ªª«<¿fE>ªª«>>Œ^¼=‚oò<h ó¾^6L       
-split_indices[$l#L         Ý  ú      V  Y  ˜  ß  	«      Ä              ß      	                    L       
-split_type[$U#L                            L       sum_hessian[$d#L       CXNCEÇ?‰C‡Büø.AL›BõÏá@e	ŸA1#?Û¿ôBóm4?˜«l@!ñ0?†0ÞA‚G?çBë
-O@†.PA	€?³¶=BÛû@ðëüL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       !:š»è½ o >ã\½¾§ñ?]Ä?†F¾€‚è½Êü¿Ž÷?7(ì¾A!?/d¾F[=]ü¾Pt‰½h˜L¾¹*s¿Øq¾ïŒë>WÜ<e‘Ÿ?Eèí½+tK¼µß¾àö¢½+ŒÊ¾€Ñõ?a°$<G%w;†,¾ËûX>–ŠÛ¼7®ÈL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       !                                 L       idiL       
-left_children[$l#L       !                	      
-         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       !@#V@¤<@	Òv@¦…x@c¦z@+>?8¢`@–,‚>»Ò ?Ç2ü    ?ªhÌ            @™•y    >­&0            ?˜x    @k1            ?ŸxH                    L        parents[$l#L       !ÿÿÿ                                                             	   	                                    L       right_children[$l#L       !               
-               ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       !>€  >ªª«>€  ?   ?   >ªª«>€  ?   >*ª«>ªª«¾A!?   ¾F[=]ü¾Pt‰>ªª«¾¹*s=ãŽ9¾ïŒë>WÜ<e‘Ÿ>*ª«½+tK?€  ¾àö¢½+ŒÊ¾€Ñõ?   <G%w;†,¾ËûX>–ŠÛ¼7®ÈL       
-split_indices[$l#L       !  i  È  %  Q  µ  ¼  ð  V  4  —      ¸              	_      ˜              4      Ñ              	e                    L       
-split_type[$U#L       !                                 L       sum_hessian[$d#L       !C	rßBêsA¡Ê{BÑõ´ACëUAˆg,@KrBÉW±@‰à/A*á„?ÈN‹A}Ú¶?—@ ¦¢?†ç¡BÃòÝ@,šz@>Ç¬?©ñd@ürN@2¡sAfJ=?¼ƒÇBÁ8?®—‡?×ë€?¥£×AE¾»@.B¾ÿœ?Ž8ÈA1£ç? Ö¡L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       33L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       »ûT½3aô>Þ¡»æü¿{ ƒ½‡m?%=m¾âá¾¸ÕD½Ñ½>>¥)>ˆ„"=¸x¾
-ô>†\=Î•½Ê9¸½Xk8>„‰ L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi	L       
-left_children[$l#L             ÿÿÿÿ          	   ÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @–/Â@•ó    @ž¥I=­A€@~†7?®tl        @…W¶        ?©Ý@Š4                    L        parents[$l#L       ÿÿÿ                                         	   	         
-   
-L       right_children[$l#L             ÿÿÿÿ         
-   ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >Þ¡>€  >€  ?   =ãŽ9¾âá¾¸ÕD?   >¥)>ˆ„">LÌÍ?   >†\=Î•½Ê9¸½Xk8>„‰ L       
-split_indices[$l#L          R  j      ú  	Ÿ  y  ˜          )              ¼                    L       
-split_type[$U#L                          L       sum_hessian[$d#L       Co§Co<@€
-CBüõ(@}*Bé™àAÚB?ÿ?â?ûABâZ!@g÷ë@Ê Í@WgqBÛí¥@M…@±þ?jåBÕ”€@K$“L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;°è½¥ç«>¸Ö½VDÂ¾ñ(È>ë}¾Tj+½Àþ>…É]? ½‚­¾¤µ?!*6?¢å¾z4½·%z¿}Ü>xƒr»÷d?)	½˜¶Ù¼U¨¾2¨¾Â¹¼)YT>^hH½	‘L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                  L       idi
-L       
-left_children[$l#L                    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ         ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @…ÍÂ@“#Ú@Câ@‰o    ?¥\    @nwô    ?õT8    @‹<p?N„0?£x4    @hõª?º‹p        ?«¿˜                            L        parents[$l#L       ÿÿÿ                                           	   	               
-   
-                  L       right_children[$l#L                   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«?*ª«?   >ªª«¾ñ(È?   ¾Tj+?   >…É]?   ½‚­>€  >€  >ªª«¾z4>LÌÍ>€  >xƒr»÷d?   ½˜¶Ù¼U¨¾2¨¾Â¹¼)YT>^hH½	‘L       
-split_indices[$l#L         ß   ~  W  Ð      	e      	}             ¢  	«  Ç      	!  	D          µ                            L       
-split_type[$U#L                                  L       sum_hessian[$d#L       C öBÙ]AÌÊ:BÖü°?„«&A¿y
-?ÕÖBÏ^@sÓ‰A®Ç@UBÃú”@¶7ýA¦c?†?ÜBº—@–8@‰?´q‚A
-?•¯xB³´@r«ü@Y9?¦mÌA“þ„?˜ŒL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       27L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-:ÛòÑ½*]>zŒg½–,	>‰;)½ÖÏ>…"ý¾À©>„Ó‹¾+”h>|+a½y,“>B¨°L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-@Š ™@‰D    @qLð    @t‚ô    @i^c    @Wÿ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >zŒg?   >‰;)?   >…"ý?   >„Ó‹?   >|+a½y,“>B¨°L       
-split_indices[$l#L       
-  “  å      Ä       R       ¼       C            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-CúGBý‰ó@¦©œBö·@p§†Bï¿@H³BéØ·@<ÌßBä\@8+cBÛê÷@‚ÆWL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<…Ó=&§™¾‘·<©ÿ>ƒä4¼Ž´´>~‘½&¯ˆ>† :¼1-¾€!Ž¼~ñÛ>7ÀÛL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-@JTÓ@YÕÂ    @0F˜    @'%à    @8‡)    @?ÀŒ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ¾‘·?   >ƒä4>ªª«>~‘?   >† :>€  ¾€!Ž¼~ñÛ>7ÀÛL       
-split_indices[$l#L       
-    “      å            j      ú            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-C€C(¨@ÜÓBü…ö@ykJBöš@?ŽBò"X@
-h6BëNp@Z|öBÞ*Š@Ò>eL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <‹¿—=ž¿¾œÊ×=„Á™¿oáY=²1¬¾¥¾¦’½µ@=Ûi¾·o±>då¾ŸBl=:™¨¾†¤L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi
-L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @>dá@Z9[    @Uk<!Ò @VÓ:            @Ch    @KÛ            L        parents[$l#L       ÿÿÿ                                   	   	      L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾œÊ×?   =ãŽ9?   ¾¥¾¦’½µ@?€  ¾·o±?   ¾ŸBl=:™¨¾†¤L       
-split_indices[$l#L         Ñ   4       T  ˜  Ý              ¨      X            L       
-split_type[$U#L                      L       sum_hessian[$d#L       C	ýCU?Ús¸Bý®@slBú©˜?Á=ò?»}?ƒi¾BøŸä?‚mBö­?¦ÍÎBñÉG@ lÆL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ºßw¦½Ÿ?5ÙÞ½hÝŽ>z}^>…XS;ß:Û½³3°?"HÊ½åî}>rs3>ƒ.#¼æö`¾(Þ´>˜7¤½Ì±>2=i>"Þ¼½è©L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idiL       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	      
-ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @0À@,Á¦?"¬@(Q            @(¸Ú?mk$@!ÅÎ            @[5	@[D                L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-      L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-      ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >€  ?€  >z}^>…XS;ß:Û?   >€  >ªª«>rs3>ƒ.#¼æö`?   >€  ½Ì±>2=i>"Þ¼½è©L       
-split_indices[$l#L         ”  Ä  .  þ               R   T  È              	}  %                L       
-split_type[$U#L                          L       sum_hessian[$d#L       Bþ÷ÅBöƒv@‡DõBñ3Ÿ@)úÞ@Nc
-?€M¿Bè {@‰2?BãîT@DÛ@J*ã?s5BË ãAG3‰BÁ@²@œsAº@AæL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <@0h=ìê¾Û0‡¼m˜á>þÂ<«gÎ¿=@'?S]¾¶x¼;Œ>„ ®¾Å7ö¾ aK?Qã‚¾3ù<E
-¾§2m»!Ñ¾j}‘>‰As=*‚~<4Æj¾“,ÙL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                              L       idiL       
-left_children[$l#L             ÿÿÿÿ          	      
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @†²@9¤    @@Ìt?Õ‹Â@Dhc>@ @HÝô    @1-˜    ?ƒß    >ÁWp    @'Üê                            L        parents[$l#L       ÿÿÿ                                                 	   	         
-   
-      L       right_children[$l#L             ÿÿÿÿ         
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >ªª«¾Û0‡>ªª«?€  ?€  >ªª«>€  ¾¶x?€  >„ ®=ãŽ9¾ aK>€  ¾3ù?   ¾§2m»!Ñ¾j}‘>‰As=*‚~<4Æj¾“,ÙL       
-split_indices[$l#L         -  ±       a    	s   ~        	~      ˜      i       4                            L       
-split_type[$U#L                              L       sum_hessian[$d#L       BÿÕ)BýÓê?€O¹Bçu¡A2òHBÞ†f@ŽóªA":?…Á„BØ2ð@JnÄ@GMä?­2áAÚp?’ý=BÕ‡E?ªêº@V?…@úšJ?”jXBÒÜ?ÛÚ,L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       23L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       !:Š–½[ „>¾5¨¼ItI¿aá^?8t¾“f<Ö&.¿Cq4¾¥¦e½œÞ?;ê½‚Å&¿Dï>!`L=afœ¾œ¹¿„ž¿<=¸v?^ñô½g¾—ö<½!š¢=Ëm7¿RÔ¾¸å´½µD>“wÙ=ÔA#=/Ä
-¾(Ìà¾Œ1°=²ÖL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       !                                 L       idiL       
-left_children[$l#L       !                	      
-      ÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       !@$ç@r:Õ@D@Fê¸?#¾à?Óz@Tï@IŽ¡?—É        ?³û4    >¬”    @Crè    >
-qÀ    =êˆ€            @2[?þÀ                                L        parents[$l#L       !ÿÿÿ                                                                   
-   
-                              L       right_children[$l#L       !               
-            ÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       !>€  >ªª«>LÌÍ?   >ªª«>ªª«>ªª«>ªª«>€  ¾¥¦e½œÞ>ªª«½‚Å&=ãŽ9>!`L?   ¾œ¹>€  <=¸v>€  ½g¾—ö<½!š¢>€  >€  ¾¸å´½µD>“wÙ=ÔA#=/Ä
-¾(Ìà¾Œ1°=²ÖL       
-split_indices[$l#L       !  i  ß     µ  ß  e  ß  	_  	D           a      ˜      	e      	Ÿ       T              ¢  Ñ                                L       
-split_type[$U#L       !                                 L       sum_hessian[$d#L       !Bû%øBÜj‘AuÛ3BÓêü@‡ùYA;„â@iYCBËp-@‡¬ï@BU?›´ºA<p?âC”@——?©ƒWBÇËÇ?éŒ@<’N?¥ASã?·Db?¨|%?€³
-B¼þÂ@¬ÐJ?òb¸?†Áä@Òt?øÎÂB²†ô@§|â@¼n?¬OrL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       33L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       »©MÜ¼ýœ">Z•¼+ž€¾¬Ë½Rš>Ø\ó¼6Ñú¿ñ3?²½¥L<‘Ô£¿_Ñ›¿MÃÕ=Í²G?'` =6_<Y¶w¾”ëÄ¾¿Š@¼Ä[¾”yâ<HÕ>jàM<¨ä$L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	      
-   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @ê@+ç«    @	5G    @h?¼ØÝ@&Í?à[L=Æ¬`    @,B1?gÄ?n¾ø    >Ü8p                                    L        parents[$l#L       ÿÿÿ                                                 	   	               
-   
-      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-         ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?€  >Z•>ªª«¾¬Ë>ªª«?   >ªª«?€  >ªª«½¥L?   >€  ?   =Í²G>ªª«=6_<Y¶w¾”ëÄ¾¿Š@¼Ä[¾”yâ<HÕ>jàM<¨ä$L       
-split_indices[$l#L         “  -      ±      	  ¸   +  ¡  ß      C  ð   _      š                                    L       
-split_type[$U#L                                L       sum_hessian[$d#L       Bö|BïÔ	@WŽYBíb(?œxQBÚ}fA&BÍI<@ÓB@òš®?îÅàBÈ„\@›ú@¯¿é?Ž
-Í@ÎTà?‘:BÅ#B?ØF‚?ž#)?“Ê@vy?%Ã@¥<?¤cL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       25L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       »í3¡½;ó?°½€ô)?%wH>yI =#dÉ¾Åä>‚Ú	>pë<ÌH½Ïã¦¾ÇOõ>Ê^¾áô]¾>a©{?”P¾
-Þs¾fDÞ=#Ò‰½?OŸ>`«`>KŸœ½±÷šL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                                L       idiL       
-left_children[$l#L                       	ÿÿÿÿÿÿÿÿ      
-ÿÿÿÿÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       @
-Ö'@³>ã¥¸@†(>’¸        @3î°@„^        @³¢    @40?CÍ¬@Îz    ?¨š4                            L        parents[$l#L       ÿÿÿ                                                       
-   
-                  L       right_children[$l#L                      
-ÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«?€  >ªª«>ªª«>€  >yI =#dÉ?€  >€  >pë<ÌH?   ¾ÇOõ?   ?   ?   >a©{>€  ¾
-Þs¾fDÞ=#Ò‰½?OŸ>`«`>KŸœ½±÷šL       
-split_indices[$l#L         Ð  þ  ß  ß   T          -  v           ¼      ß  ¸  ”      	"                            L       
-split_type[$U#L                                L       sum_hessian[$d#L       BóÏ¬Bê@•
-ºBãxû@`ÀÃ@.ô|?öAñB¾SA•¶ž@ `e?€À¼B¼ä?‚[¹A]Ì@0=ÂB·ßå@?ëAWS”@ (â?Ì
-³?”mÐB³¸Ë@ãBAFEb?ˆq‹L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       25L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :ôé¼¤aH>Lt†½@Ò>Zf½”›>Q×½ó?Ì> ‹ ¾/â
->¨8Ã>ýûî¾dŽè½yEõ>3¸w>5au½üE->XêR¾û•¾ù°=YàL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?åßø@L
-    @
-gh    @¨§    @³?©Um@¶´@\L@¿>ßæ                                L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-            L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-               ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  >Lt†?€  >Zf>ªª«>Q×>€  >€  ?   >LÌÍ?   =ãŽ9½yEõ>3¸w>5au½üE->XêR¾û•¾ù°=YàL       
-split_indices[$l#L         )  ˜       ˜      È      i  %  ç     µ  ˜                                L       
-split_type[$U#L                            L       sum_hessian[$d#L       Bòø³Bíü@<–âBæpÓ@Te*Bàf$@AUÌBÉ¦YA5þ\Bµe>A"ÓA¸á@5ìB¯¤M@8#@ôŒ@ 2@éú?Þ—?Ú+?'®L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <9å„<Û-¾†#Ú;“é¶>n½Ü¼S&å>ÎØ<4Oñ¿DE<öè¾•š¾‘­û½ct›<‰3ô¾K„L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?Ù#@°Ê    ?Ý;ÿ    @c
-    @õ¹>Su@@‡ä                    L        parents[$l#L       ÿÿÿ                                           	   	L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾†#Ú?€  >n½Ü>ªª«>ÎØ?   =ãŽ9?   ¾•š¾‘­û½ct›<‰3ô¾K„L       
-split_indices[$l#L         Ž  ”      Ù             ˜  ˜  j                    L       
-split_type[$U#L                      L       sum_hessian[$d#L       BóžnBñ[j?ÀÚBì]×@²ZBénC?»å$Bä-n@(’BáÁ
-?›%?Ã-$? BÛkô@J¢¶L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;Œrœ¼XS>q‹$<MšZ¿Œ>¼'`>l4¾[+º¾„ä½´ß>gû<F®¦¾21½VØ¼>\¥Ù¼º‹‹>=FfL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?Õ¯.?Ýuœ    ?ÿ v>½=L?ò13    >i8õ    ?ß\‹            ?àL›            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«?   >q‹$?€  >ªª«?   >l4>€  ¾„ä?   >gû<F®¦¾21?   >\¥Ù¼º‹‹>=FfL       
-split_indices[$l#L            œ       ˜  ß  )       ³       ¼              “            L       
-split_type[$U#L                        L       sum_hessian[$d#L       Bð›¯BíDŒ?ÕÈšBä±)@‰62BßìD@œ»@--?Ê~šBÛ–ì@
-ªõ?Òš½?‡¿qB×Œ@ZBÑô•@2ðÜL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <*Ÿ\<Ûa¾x@d»ÜŠ>òÎ¼øsØ>Wœn?
-Ô½m	õ»ÝrÀ¾oŽÄ?.˜b=}Ž=Ït¾óËŒ>pò~=™×N¼VWs> Ö=A¸¾©c¨L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idiL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?Òx§?åßT    ?òîl?jˆÔ?öòË    >P    @ Ä    =‘X`    @e[@^ŠÂ                        L        parents[$l#L       ÿÿÿ                                           	   	         
-   
-      L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >€  ¾x@d>€  ?   ?   >Wœn>€  ½m	õ>€  ¾oŽÄ=ãŽ9=}Ž>ªª«=ãŽ9>pò~=™×N¼VWs> Ö=A¸¾©c¨L       
-split_indices[$l#L         Ñ  ú      ˜  Y   a      	«      	«      ˜      ß  ˜                        L       
-split_type[$U#L                            L       sum_hessian[$d#L       BïÖoBíR?´ DBÞU¸@ë	¥BÙˆ@*&@Ãy/?žAÚBÔ[v@"N@¡¹0?†ÿøBÄÂÚ@ù‰µ@[/´?Ð…ZB©u
-AZnh@‹æ•@[F?L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <Ëu¼®œq>üp3½DÉ?'%E>Q¶Ê»A™½œJ¸>rï¦>klÉ=G£ù½gˆ/¾B~½3?¾Ð»õØ¾Š:L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiL       
-left_children[$l#L                       	ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?Þ<G@ÂÎ?+Â¼@*Æç=õfp        ?ú‘            ?ù{^    @¦d            L        parents[$l#L       ÿÿÿ                                                 
-   
-L       right_children[$l#L                      
-ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >€  ?   >€  >Q¶Ê»A™?   >rï¦>klÉ=G£ù?   ¾B~>ªª«¾Ð»õØ¾Š:L       
-split_indices[$l#L         	}  !  	«   C  	D                        Y      	_            L       
-split_type[$U#L                        L       sum_hessian[$d#L       BìªDBà»¢@¾êBÙó7@Y
-s@‚T.?òW¼BÔšb@+«@	^?Œ*BÒTm?‘}BÎÍ@	tBÊ7?ôm4L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;èÍR¼5aH>\Þd¼íeC>^%w¼Ijì¾‹AÇ;àÀ¾füD<Õó¾\Çº†Ì>H1±L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?ÅXð?Æã­    ?Õ±È    ?Î|”    ?ÉÐÙ    @
-¦            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >\Þd?€  >^%w?   ¾‹AÇ?€  ¾füD>ªª«¾\Çº†Ì>H1±L       
-split_indices[$l#L       
-   R  Ä      Ñ       4      	E      ±            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BëãBç*?û·ŽBã‰?è?¹BáGÃ?PÀBÝˆ?ïï!BÙ§î?ø.BÑ½2@}WtL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;¥ÛÄ¼€¸Â?µH;qT¾wYà>`ò´=>”¼ŽŽ1>YÕ½!Üý>8µx½j›>^É¼¸<U>SA@L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiL       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?½S¤?ÍÕ=Ü¨P?ÇÔ*            ?Åù    ?ÀÛy    ?¹ü´            L        parents[$l#L       ÿÿÿ                                     	   	      L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?€  >€  ?   ¾wYà>`ò´=>”=ªª«>YÕ?   >8µx?€  >^É¼¸<U>SA@L       
-split_indices[$l#L         þ    	Ÿ  “               ?      –      ”            L       
-split_type[$U#L                      L       sum_hessian[$d#L       BèiBâ±E@;„xBß¥e?Âø?è¹D?ŽO«BÛ†¼@Õ#BÕÁá@8›^BÒ¶Æ?ÂÆBÏ•t?ÈT¸L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <AˆG<ä“š¾cïÌ=>ál¾<b<µšj?%·i=!ÿN¾l¡Ä>g”{=SÙÍ=iv.¾HÅ;< ê¾>4>&L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?¸æ«?µ9“    ?Ó|9    ?Æb=½ãÐ?­!            ?Ý9$            L        parents[$l#L       ÿÿÿ                                              L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾cïÌ>ªª«¾<b?€  >I%?€  ¾l¡Ä>g”{=SÙÍ>€  ¾HÅ;< ê¾>4>&L       
-split_indices[$l#L         «  ä      Ð      -   C                 í            L       
-split_type[$U#L                      L       sum_hessian[$d#L       BèÊBåÏD?¾¯3Bá¡@`BÚH²@Y½èB×uQ?´Ø6@'S?-*BÓõK?àPBÊNj@šnL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;Èõù¼Á…J>±6Z½44_>`Ú?ñ½á¥¹¼ÑÍ¾A?$CÂ¼þ¼v»žà’¿• >\ÿX= î4<Rÿ¾]ZM¾ts¼ù^<rH¾fSdL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idiL       
-left_children[$l#L                    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?—73?Ø"?¥ðü?Ö€â    ?5ö´    ?¥¯Ç    >M@    ?¦å‹>oÞˆ        ?Ã!-                    L        parents[$l#L       ÿÿÿ                                           	   	                  L       right_children[$l#L                   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«>€  >ªª«?€  >`Ú>ªª«½á¥¹>ªª«¾A>ªª«¼þ¼v?   >I%>\ÿX= î4?   ¾]ZM¾ts¼ù^<rH¾fSdL       
-split_indices[$l#L         ±  æ  ß  	~      š       +      ß      ä   C           T                    L       
-split_type[$U#L                            L       sum_hessian[$d#L       BåïiBÕ$KAXôBÑa??ðÂÍ@á{<?¬Ú²BÏÑ?’Û{@¸öe?¢[BÊ@ ö@—q¦?†ýBÇ\?½ïU?¾2þ?úîBÄ ”?Ç22L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       8âS¤¼ŽQ>3Ž½À>XZ'½f¤>ËåÄ½œåf>*P,>6èk¼Ççj½É°ñ>WÑ¡½[×>1Á^L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?–ÂÝ?š°    ?—c    ?­}?¨?êWË            ?¾             L        parents[$l#L       ÿÿÿ                                              L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >ªª«>3Ž?   >XZ'?   >€  ?   >*P,>6èk¼Ççj?€  >WÑ¡½[×>1Á^L       
-split_indices[$l#L         ”        	}      !  	«   C              þ            L       
-split_type[$U#L                      L       sum_hessian[$d#L       Bã/õBÞtï@`ÕBÛèß?£òBÑË¾@¡ÒBÌ½B@!Ï‚@Ze}?Ò}PBÈÙ!?ùBÄ‚¶@
-ÍdL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<3‹ù»wSN>Iý<k„õ¾10Ò<ø‘¾i”°=@±¾[9å=€CW¾K±<ÇG¾*f®L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?‹ù?˜\    ?²«¥    ?²À5    ?žœÿ    ?¡‰˜            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >Iý?   ¾10Ò?   ¾i”°?€  ¾[9å>ªª«¾K±<ÇG¾*f®L       
-split_indices[$l#L       
-   R   a      	«       ž      «       +            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-Bä.Bàõ?ÊIBÛðá@ „ÛBÙaÕ?£ÃBÖq?¼/BÓž÷?´ˆOBÏ*@ž½L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :ø§¼~=É>(„¢½xn>,H‰¼†å¾tQÖ<©¾÷ä¼G”A?g¾P»ë<,~;D%Ý¾Sp>ƒl;ŽL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?‹»]?”u¼    ?±8“    ?¤Ú    ?¤‚è?>ô?Á2}?xØ                        L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >(„¢?€  >,H‰?   ¾tQÖ>ªª«>I%>ªª«>*ª«¾P»ë<,~;D%Ý¾Sp>ƒl;ŽL       
-split_indices[$l#L         y        -            G   C   +  4                        L       
-split_type[$U#L                        L       sum_hessian[$d#L       BáŒóBÜxn@"«B×±l@à6BÕ|?ª¼BËÔO@“"ÌBÆ–@'Æ4@F ”?¿J	BÂ1K@šM?¿?ÙL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :ùÇ"¼Dý}>R~³<<ÑË¿ <ý¼<õØ>Iå¾qù-=P	<ä ¾R¿\=‹p¾çÚ <™£³¾LC¾g3Ã>–yL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?ŠþE?¥µ    ?Í‡Û?-ë?¼XÄ            ?°0    ?ßb|@É€                L        parents[$l#L       ÿÿÿ                                   	   	            L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >LÌÍ>R~³>LÌÍ=ÌÌÍ>ªª«>Iå¾qù-=P	>ªª«¾R¿\>ªª«>€  <™£³¾LC¾g3Ã>–yL       
-split_indices[$l#L         Ù  	!      ±  Ý  	_               ~         	D                L       
-split_type[$U#L                        L       sum_hessian[$d#L       Bàs±BÝä¹?£½êBÕo@…T BÐm@/àC@2éí?¯~§BËÉÍ@ÓÿBÁ¥@¢LB¼Î@Ð[@~YŒ?Œ'L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       9ÌÕË¼iý	>DCà¼úbD>/â"½E€X>Mw½ƒÅQ>2þ	½µ|g>ÐLÔ¼¬s‚¾ŒK>(G¶º¿îÌL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?‡íƒ?‰Ìr    ?°	    ?+Þ    ?ž¿à    ?»þe>Ÿò’                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >DCà?   >/â">€  >Mw?   >2þ	?   >€  ¼¬s‚¾ŒK>(G¶º¿îÌL       
-split_indices[$l#L          ¼  å      “      S      	}        v                L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÞÃÚBÛ¬ ?Åî~B×–@Â<BÔC?ßrÒBÐ‰?â.¦BÇâì@ŠÉÎBÅ Ü?ƒì@?ø?­HL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;á†ø<¢*¾Z\¼lÈÝ>«Š½Ê>Mã>öl–½ÿü—½U€ó>0ÖF?œ*½‰ùc½²j’>‘Íˆ?;d½¼É,Y»ót½Ý¾>*¬o¾g>‚ˆ
-=¾g„L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                              L       idi!L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?†þ?šH[    ?ŸÆ›?µµ?žæß    ?ö`    ?–…     ?2 x    ?ÁÒp@*x=Ë@                            L        parents[$l#L       ÿÿÿ                                           	   	         
-   
-            L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >ªª«¾Z\?   >€  >ªª«>Mã?   ½ÿü—>€  >0ÖF>*ª«½‰ùc>€  >LÌÍ>ªª«¼É,Y»ót½Ý¾>*¬o¾g>‚ˆ
-=¾g„L       
-split_indices[$l#L         Ž  È      )   í  G      µ      i      P      	Ÿ     —                            L       
-split_type[$U#L                              L       sum_hessian[$d#L       Bß°BÝ ƒ?‚K3BÉ:AâFBÅÎÈ?Ï–A
-~è?«õBÁJ¿@@é©<?­RPB°rAÁ@Ét?€ÔŒB‘~—Aw 3@ÏÝ_?ö“@„%@
-/L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       23L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <ÆÊ»ßú¼>&×k¼¦tJ>H„±½:É5>µ|W½€zš>0¡[>$½±¼Ñ·½ J~>=$Q¼êƒe> úL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi"L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?rÀ8?}:ž    ?…¬H    ?&
-? #Ç?ùí            ?‰y            L        parents[$l#L       ÿÿÿ                                              L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?€  >&×k>€  >H„±>€  =ãŽ9?   >0¡[>$½±¼Ñ·?€  >=$Q¼êƒe> úL       
-split_indices[$l#L         þ  ô      ú      ˜  ˜  )               ˜            L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÝì|BÙwÎ@•ÃB×Ä?BœBË…@¿ïBÇ\Ð?í-L@q¾Ø@iBÄ¡;?®å2BÀËK?õ|L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <†«Ä;K|Ó>B©í<àb¾a¤Y=	(Ø¾@_×<ž	¾>S¨
-=(ì¾Ñƒx;"Åb=ïàk¾9B=R²L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi#L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?kÐþ?˜ä    ?’Œ    ?}¶N    ?‚—ž    ?–p?2>=                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?€  >B©í?   ¾a¤Y?€  ¾@_×?   >S¨
->ªª«=ãŽ9;"Åb=ïàk¾9B=R²L       
-split_indices[$l#L         Ä  	~       4      ”            È  ˜                L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÞR>BÛ–d?®öqBÙGé?“ž«BÕâû?Ù;BÓ^R?¡*6BÊÉÛ@‰GzB»*ù@ùî@LDÙ?Œ”8L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <EŸ’<ÌAí¾FF» ¢n>¾‚4¼›q;>K›Ê>ÿ¬y½‡µ;(`k¾ûY[>%¹h=Eúw¼ˆ®»>V?¾[sl=	Î;n¾
-pôL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi$L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?tÜF?…Á”    ?’;I?7$?ƒô£    ;ãØ     ?¨á	?1.¤        ?ýø                    L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-   
-   
-L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«>ªª«¾FF>€  >€  >ªª«>K›Ê>ªª«½‡µ?   >€  >%¹h=Eúw>ªª«>V?¾[sl=	Î;n¾
-pôL       
-split_indices[$l#L         <  ±      æ  	D  4      ß      5  Ñ          	                    L       
-split_type[$U#L                          L       sum_hessian[$d#L       BÛú>BÙ¥L?•<xBË’ª@á*BÈˆé?Âp[@½oò?Žè BÁ®¬@[GŽ@˜VÁ?”dÄB¾ZÃ?Ôú0@Ò«?„éÆB´•@@œX3L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <!§¨<¸BÖ¾G°Ö»<A>×œ2<1UK¾?år>*TÙ½$R¿»Žm‘>7
-B¼ÅCN>ÖL<¼Vµ&>4‹G>`Qø½½âL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi%L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?mê·?ŒÓŒ    ?b®%?Fh?hCß            ?Xû    ?—ì<?Q                L        parents[$l#L       ÿÿÿ                                   	   	            L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >€  ¾G°Ö?   ?   ?€  ¾?år>*TÙ½$R¿?   >7
-B?   >€  ¼Vµ&>4‹G>`Qø½½âL       
-split_indices[$l#L         Ñ  ú       4  Y  þ              ‹        	Ÿ                L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÙ’}B×b?Œ™BÌ]G@°L„BÉáù?žÓ„@Ž'ª?ˆ“gBÆ·?Ê½iB¿¨e@aÓ·B»Î@Òô?û­R?ÇúL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <+}»3 >C¸s<3Òý¾;Ig»óÆ>9®2<ßùM¾ˆXK=R}p¾_Ù>nÌ¿yP³<®«¾O]L=¦\½¦{¾ÌPY¼Æu3L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi&L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?aõe?blÎ    ?U°    ?T"¾    ?â‹p@KÁa?¯u%    >û'ª?•N                        L        parents[$l#L       ÿÿÿ                                           	   	            L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >C¸s?   ¾;Ig>€  >9®2>ªª«>€  >ªª«¾_Ù>€  >I%<®«¾O]L=¦\½¦{¾ÌPY¼Æu3L       
-split_indices[$l#L         	š         R      ð         	Ÿ  ›      Ñ   C                        L       
-split_type[$U#L                          L       sum_hessian[$d#L       BØR“BÕêñ?™è†BÓ9c?¬c‹BÐ–G?¨ÇB½7ÈAóòB¹+ü@y~@ÕÍR@@5#B¶,?Ä´@©]±?±¾…?æä?šdaL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;*•X¼“Ì'>Ëºòºòþ¾]:K>4Ü¼x‚J¼˜µ„>.XS½ß¨>B5½‚z>Éä¼ß¡q>B“]>V<½F*/L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi'L       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?ccê?–|>ûìZ?|Û            ?Š^ƒ    ?k(    ?åh§?Kš<                L        parents[$l#L       ÿÿÿ                                     	   	            L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >€  ?   ¾]:K>4Ü¼x‚J?   >.XS>ªª«>B5?   >€  ¼ß¡q>B“]>V<½F*/L       
-split_indices[$l#L         	}  ä   T  !               C      È      ‹  %                L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÕëôBÍI@ŒÚ±BÊtª?ªgÏ@7”(?ÄBsBÆ‰e?úÑ+BÃ‹Ø?¿c8B´ Ñ@î°zB¯Ê@#àÖ@¤È¢@Ï±L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<
-;¯»“q†>9g<.G¾V*<Îà‡¾T6—=o¾%Œü<™¿g>B9:LÅ>IoL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi(L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?WÅ7?ã˜    ?ŒOþ    ?Gçõ    ?–D    ?„Û            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >9g?   ¾V*?€  ¾T6—?   ¾%Œü?   >B9:LÅ>IoL       
-split_indices[$l#L       
-  à  Å      Ý      ¨      ·      5            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÕ³XBÓÆ?«d†BÐoÑ?¥}BBÎ?—m­BËD•?³a4BÆÑS@hHBÃÚþ?½•L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;×ŒÓ»µ?;>Còr<aKj¾ðÊ–».†&>H][½
-1ú¾]ËÇ¼8‘>:ž½ ?­á¼‡Gd>&6H>PŒ<mpmL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi)L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?RÀf?uP1    ?ŠQÉ>˜–â?„W€            ?€ˆ?    ?Sc>r,D                L        parents[$l#L       ÿÿÿ                                   	   	            L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«?   >Còr?€  >ªª«>€  >H][½
-1ú¾]ËÇ=ªª«>:ž?   >LÌÍ¼‡Gd>&6H>PŒ<mpmL       
-split_indices[$l#L            œ       ˜  ß  S               ?      ç   ™                L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÔw²BÒiï?ƒpíBËå;@P–€BÈº?ÊÊi?úAT?¦ë­BÅQ‹?Ú!›BÀeö@r‡B¼›?ò¸?ºÎ²?€\L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <A+8F‡—>6ñ<¡dn¾Ü¿q;m>*¾E ó=2ö <k¾U=ü=µ¾*ãü<ŠY½¾3³L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi*L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?< ?hBê    ?uZð?)¥?ˆÚ            ?‹Ï(    ?ŸFv            L        parents[$l#L       ÿÿÿ                                   	   	      L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >LÌÍ>6ñ>LÌÍ=ÌÌÍ?   >*¾E ó=2ö >ªª«¾U=ü?   ¾*ãü<ŠY½¾3³L       
-split_indices[$l#L         Ù  	!      ±  Ý   P              	_       a            L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÔU³BÒö?ŽoiBÊÆ}@j¯BÆM_@#¼@&¦1?ˆÑBÄ%?’Ž€B¿”Z@
-ÙXB»R!@G"L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;¿š¼b/>z¼¨ðŽ>0²ÿ½ª>5K@½7æŠ>4Ê
-½jò>-MÅ¼k½Ù9¡L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi+L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?>Ï!?F T    ?H ß    ?LœÜ    ?IP˜    ?SÒæ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >z?   >0²ÿ?€  >5K@?   >4Ê
->ªª«>-MÅ¼k½Ù9¡L       
-split_indices[$l#L       
-  ”   ¼      	š      ô      Ä      ß            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÒ©'BÎßX?òsåBÌh ?ÕúBÊJú?‡ABÈ9?„z9BÆ
-…?ŠâáB¶Ò@ó°^L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<@+s<Ã_
-¾@÷Û<Ä>>p]<»Ç>¾$Ä<ÃÇ>>Bì<¸¡Ý¾4é”<2Ä¾ ¦°L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi,L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?V®ï?`½Ã    ?Ake    ?Yžf    ?V#    ?C~®            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ¾@÷Û?€  >>p]?   ¾$Ä?   >>Bì?€  ¾4é”<2Ä¾ ¦°L       
-split_indices[$l#L       
-  Ž  ”            å      Å      -            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÒg@BÐaÀ?_øBÍ‘?µŸBÊ?¿_bBÇäX?ªîØBÅPe?¤üÆBÂM;?ÀÊ–L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;Áøî»ÄJÈ>3fÛ¼”ú]>,|¼÷%Û>+=º'C¾¬WG<•hë¾7ˆ‘¾÷×Í=Ï£Š<8è¬¾.€¼„pè¾K7L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi-L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?:f©?:•ø    ?9ý„    ?k¥
-    ?ˆ¥4?†ÈË?ˆbê    ?Gà                    L        parents[$l#L       ÿÿÿ                                           	   	      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   >3fÛ?   >,|>€  >+=?€  >€  ?   ¾7ˆ‘=ãŽ9=Ï£Š<8è¬¾.€¼„pè¾K7L       
-split_indices[$l#L         ”  à      –      v      ¥  i         ˜                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÐ€“BÎ;ˆ?‘BùBËÇ
-?ZBÉza?“*.B¹˜€@þBµÈø?óáï@×ò1?˜¯‘B±Ç’@ ,È@}9@Œ³”L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;¶õ3»Ã_@>-U;Øì¾"¼<|Ý>  ¹;”’y¾1xÚ<ÜR…¿âK;0
-Š>G¬½’‚õ¾Qœ/L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi.L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?-¨2?/%    ?D§2    ?f†u    ?•‘È    ?† <zë                 L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >-U>ªª«¾"?   >  ¹?   ¾1xÚ?   >ªª«;0
-Š>G¬½’‚õ¾Qœ/L       
-split_indices[$l#L          R   4      ±      C      	Ÿ      y  š                L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÏ–œBÍQV?‘QYBÊiG?ºÙBÃ¿ @UGîBÀH•?ÝœªBºWs@>$*B·%?Ï“{?öÂ¿?……–L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;]ƒX»û
-Ï>.ä¼¥šþ>›;½ þr>2æÀ½< >ô½…ŸØ>ºRÇ¼t*Ù¾`A>Œ:e&¿L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi/L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?&¼g?&IV    ?P     ?:¼    ?NÑC    ?s1>f'°                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   >.ä?   >›;>€  >2æÀ?   >ô?   >€  ¼t*Ù¾`A>Œ:e&¿L       
-split_indices[$l#L         ’  “      å      S      	}         T                L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÎ_BÌ¤?®³BÈ×Î?Ëu—BÆt³?˜ÆBÃÊ€?ªŒòB¼‘ç@gBºZ¼?Ê¿@ý´?¢*ÉL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <<Ö<Ÿ ¾)’ò=ÏQ¾E æ<,©e>Ê¦}»%º€>(N×>ácß=L„¼‘A3>|>'#<æ¥º`Ú¾;ð‚L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi0L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?%ÌW?có.    ?L›‡    ?/h<ÈØ`?3·y    =ï@ø    ?TiA                    L        parents[$l#L       ÿÿÿ                                           	   	      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?€  ¾)’ò>€  ¾E æ?€  >€  =ÌÌÍ>(N×=ãŽ9=L„?   >|>'#<æ¥º`Ú¾;ð‚L       
-split_indices[$l#L         Ñ  	~      ú      þ  	«  Ý      ˜       ž                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÎ<íBÌ1P?‚çYBÊ0H?€BBÀÅô@–¥EB¾#Ò?¨ˆO@g µ?ŒS©Bº§@t@<?£ÉQB·…/?¥ðL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;Ðf»íK*> l0½m·>Û_»ÔŸ¾ôà>ì—ô¾¿<nL¥¾Lþ¿¾6Fi;gúw>V«½ì}<ÿ7¯¾KÕ<jèÝ¾ZZL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi1L       
-left_children[$l#L             ÿÿÿÿ          	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?ˆµ?8S    ?ÜÕ?¨C?ü·>«Ü?ƒñ·    ?‚\                    ?Bg•            L        parents[$l#L       ÿÿÿ                                                 	   	      L       right_children[$l#L             ÿÿÿÿ         
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  > l0>€  >ªª«?   >ªª«>LÌÍ¾¿?€  ¾Lþ¿¾6Fi;gúw>V«½ì}>ªª«¾KÕ<jèÝ¾ZZL       
-split_indices[$l#L         ç  .      ¢  e  ä  ß         	E                      ›            L       
-split_type[$U#L                          L       sum_hessian[$d#L       BÍ/ÃBÈÝn@
-J‡BºÚ»@à+>B±@G@™§B@¾Ö?…TœB®ÅŽ?ž®@mòÙ?Š·T@‚‚?ñNB¬t’?”>ãB¨¼a?îWL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       8øª]¼/U4>(ƒ¼³ƒî> ¶i½{œ>ÃBÄ¼¿é‡¾0ª>CE1¼…G"½E¼>”SE¼¤vû>*Þ>ì¾CÉL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi2L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?Öq?x1    ?Æ
-    ?2YŒ>ãµp?B)f            ?‡Nn?ºœÜ                L        parents[$l#L       ÿÿÿ                                                    L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   >(ƒ>ªª«> ¶i?€  >ªª«>€  ¾0ª>CE1¼…G"?   >ªª«¼¤vû>*Þ>ì¾CÉL       
-split_indices[$l#L         ”  à      Ð      -  ß  .              ë  e                L       
-split_type[$U#L                        L       sum_hessian[$d#L       BËzBÉ¸?€ð„BÆÀ?f“BÁW£@-LB¾œ’?®ÄE?µmß?¤°ºB²?ü@ÅÉ^B®’¢?ëV‹@ ky?•w”L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;¼Î"<ˆt…¾(›¤;œ+)>,õQ<ŒY¾-Vs=”)¾¯Ï¾<˜Ûc>I/;¼÷¾FÞÏ:}c>#H²L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi3L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?!à?(A    ?7¤W    ?-Û3    ?€>èwø?N                    L        parents[$l#L       ÿÿÿ                                           	   	L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾(›¤?   >,õQ>ªª«¾-Vs?€  >ªª«>€  >I/;¼÷¾FÞÏ:}c>#H²L       
-split_indices[$l#L         Ž  ”      	«       a      	s   ~  X                    L       
-split_type[$U#L                      L       sum_hessian[$d#L       BË)åBÉ&ê?€¾’BÆ×}?“Û8BÄ)?•”úB¼J@~;þB¹}"?Ä‰Ó@×›?¼ÈÆBµ<?û9ŠL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;’î¹»××e>ü¼”MS>BÕ»`¯¾@Ñ<Zš–¾%ñp½bs>ó¼ŠI/>@Ÿ> «Ý½»ÂÀL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi4L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?–‘?
-Í*    ?©¹    ?aU¶    ?‘ú|    ?«>?§4                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >€  ?   >ü?   >BÕ>ªª«¾@Ñ>ªª«¾%ñp>ªª«>€  ¼ŠI/>@Ÿ> «Ý½»ÂÀL       
-split_indices[$l#L         æ          a       +      ß      Ç  	«                L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÊ0ÙBÇ¶¦?žŒ›BÄÏ‡?¹ÇåB¿þ@ ÁB¼¶?û2¦B¡ËyAR1æBÑ?þ™ÃA,0ƒ@ŽL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;ÌøË<ŠEä¾"¦<ðJª¾FS<!ƒ=î
-M»žQ>&^Ç<‹9¾&<;æjA¾hL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi5L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?€2?/Ë     ?0rt    ?3±d    ?.Ó    ?2"            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ¾"¦>€  ¾FS>€  =î
-M?   >&^Ç?   ¾&<;æjA¾hL       
-split_indices[$l#L       
-  Ñ   4      ú      ˜       ž       T            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÉt9BÇo™?'ùBÄ¿á?«îB¼@ƒ,CB¹¶/?µ»RB·Û?¦TýB´<¯?¸L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :¥&Ù<@ÏØ¾ 1!»ca7>!!6¼k#K> m“½<s>$%½xÆ>ÞIÀ>ÙQ½ó¸+¼Å­>ÿÌ>eêý½ ¼ƒ>W…Ö½ïl§L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi6L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?v^?HE|    ?r     ?l¾    ?…ZT?……¥?]ô?–ƒ:?ß“                            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-            ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   ¾ 1!?   >!!6>ªª«> m“>€  >€  ?   >I%?   ½ó¸+¼Å­>ÿÌ>eêý½ ¼ƒ>W…Ö½ïl§L       
-split_indices[$l#L         ˜  ë       ¼      È       í   í  	}   C  µ                            L       
-split_type[$U#L                          L       sum_hessian[$d#L       BÇÏÌBÅÊ[?\BÂà?ñÞ¿B¿û†?Ö‘B²’ç@Ö‰óB«œ@^Ûc@±??•+B¦‘‰@!P_@-¾?‘[I@‡ Ã?¦y#L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;ÎD^<‡Øñ¾Gâ»V;Ý>šœM<w»\¾ß‚>åú½"Æƒ»)8š>/ã'¾,¼ùÍ¼—v>"¢H;†w.½ÊAÖL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi7L       
-left_children[$l#L             ÿÿÿÿ          	   ÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?
-ÆÞ?ßÁ    ?A€Ç>Ú?gù=Ö        ?Dr3            ?bÔ            L        parents[$l#L       ÿÿÿ                                         	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ         
-   ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«>ªª«¾Gâ>ªª«>ªª«?   >I%>åú½"Æƒ>ªª«>/ã'¾,¼ùÍ>€  >"¢H;†w.½ÊAÖL       
-split_indices[$l#L         <  ±      4  š  ·   C          G              ð            L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÇoBÅlì?€†wBºo$@¯Ü‚B´®h@8@‡Nî?¢6PB±¥?èp°?ÍY­?¢ÕRB­Èž?ÑØBŸ6[@é$1L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;›…®»ªq¯>-n;ß ¾(,3<˜1°¾IU=dâì¾
-2X=šÒœ¾V8(<ÞQ¾`pC<éC:¾.øÆ=[¯™¾€F–L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi8L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >÷Ò·?%âø    ?‚    ?,¬    ?œ=Œ?ÒÜ?‚ž2    @rj                    L        parents[$l#L       ÿÿÿ                                           	   	      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >-n?   ¾(,3>€  ¾IU?€  >€  ?   ¾V8(>€  ¾`pC<éC:¾.øÆ=[¯™¾€F–L       
-split_indices[$l#L         à  Å            	Ÿ      -  ð  C      	D                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÅõýBÃéé?ƒBÁš?“ù B¿Ù?¥
-wB›I’AŽñB™\?MwAqÉÊ@0a§B–I?²ÒòASÂ?ð:[L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       »­‚Û¼™9O>¿>Y»ò;;¾ ÈÔ>$ŸŠ;˜ð;üa¬¾·Gé<ÉB]¾Óc¾«w»	(A;òL>5Jû»XÐ>9)L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi9L       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	      
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?»?¯)>LY\?žC            ?;$µ>&)Ô?^ˆë            ?Km            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-      ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       =ªª«?   >LÌÍ>LÌÍ¾ ÈÔ>$ŸŠ;˜ð>ªª«>€  ?   ¾Óc¾«w»	(A>ÌÌÍ>5Jû»XÐ>9)L       
-split_indices[$l#L          ?  Å   ™  	!              	_   T  	-               ™            L       
-split_type[$U#L                        L       sum_hessian[$d#L       BÃZ–B¾‚ø@óÂB¼Qé?ŒCÈ?­§"?ˆ@bB¶kö@<¾TB±Õí@Á+?÷9¡?‚C B®J?Ñ¨´B¬/%?˜	<L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-»‘,<®e¾ëÑ»Û—>Æ¼›^Ÿ>'>f¼û>>™á½257>Úæ»Â}=¾RÖL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi:L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-? Üâ?=Ö0    ?'ˆ    ?jA    ?)S,    ?i3«            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  =ªª«¾ëÑ?   >Æ>€  >'>f?   >™á>ªª«>Úæ»Â}=¾RÖL       
-split_indices[$l#L       
-     ?      “      S      °      	            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÃ7-BÀ ?®:B¼’?û?:BºZ¦?×eB·ç6?œÛòBµ`W?¡·¶B­ºA@tÂ×L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;å¼"M>$:ç2¾ŸŠ¼m;©>Ï=ºÆ¡¾8#¼]F}>%ÖN9cù†¾;]ïL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi;L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->ï©	?¢á    ?BE9    ?5ÃG    ?ïé    ?GR            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   >ÌÌÍ>$>ªª«¾ŸŠ?   >Ï=>ªª«¾8#?   >%ÖN9cù†¾;]ïL       
-split_indices[$l#L       
-   C         Ð       P             4            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÂßêB¿÷÷?¹üÌB½Î,?Šr¼B¹€“@	³2B·q?ƒàpBµ_ä?„KDB³P?‘¤ôL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-:m¬z¼¶Ã>M]¼žQ'>Ü¼÷Vû> ®½+%i>ð=½cœü=â.h¼¦7Ì>*­L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi<L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->ç¼<>ßô>    >ûìÁ    ?Q5    ?    ?$Ö
-            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
->€  ?   >M]>€  >Ü?€  > ®>LÌÍ>ð=?€  =â.h¼¦7Ì>*­L       
-split_indices[$l#L       
-  æ  )      ˜       ˜      ±      þ            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÁäøB¿¡£?ÕMB½R?¡EBº•Ì?¡á„B·³¾?¸ƒqB³eÎ@	½üB±Q2?…'	L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <–<œ%
-¾pa=eÂ¾	‘<‘ºq>µºê2ÿ>½ˆ<Ü=o¾Øðz>â&Â<¤Jv;&$,>@¥¾:µ= ²>ej=7UL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idi=L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >â‰€?ô     ?Yœ    ?%Þ    ?Œ=¹= õH?n4 ?õZ<f€                            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-            ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾pa>ªª«¾	‘>€  >µ?   >€  >ªª«>€  >ªª«<¤Jv;&$,>@¥¾:µ= ²>ej=7UL       
-split_indices[$l#L         «  ã      G       ³       Û   T  Ç  Ñ  ß                            L       
-split_type[$U#L                          L       sum_hessian[$d#L       BÂŠBÀ«?¢7ÐB¼’{?àŒB¹"­?ÛóUB±AX@|*·B§ºÕ@˜h.@3º?à3B¤®Å?Ã×@[Ù_?©íü?Î.Î?™FlL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<	½†º´•>hö¼Jð`>ð¨:	nm¾¹ª<CÝ¦¾"ª“:‘Œ>!mf;,
-½ÛOL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi>L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->ÒëÕ?     ?7.    ?˜~    ?
-ã÷    >ïŠ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   >hö?   >ð¨?   ¾¹ª?   ¾"ª“?   >!mf;,
-½ÛOL       
-split_indices[$l#L       
-  å  “      V      	«       C       œ            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÁï9B¿g?—ôoB½„?‚ÒÏBº<?Ò  B¸7Š?#àB¶0ò?¦B±"&@!ÙeL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;ØÞT<t0¾+;…»ô>Þ}<tu¾ /D9Ø1Ÿ>8˜ü<|Cv¾"õÆ9
-=’>3žlL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi?L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->ÎE>ì&    >ì…    ?Kç    ?=    ?E7            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   ¾+?   >Þ}?   ¾ /D>ªª«>8˜ü?€  ¾"õÆ9
-=’>3žlL       
-split_indices[$l#L       
-  ˜  ë      ä      Ù      ›      	•            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BÀŠ8B¾„ ?eçB»0o?ÕRB¸Ì?¤¨³B¶ê? x„B²ÿ§?ÇÂB°]Î?¨v>L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;ºz°¼>£‚¼ªŠg>°†>üÆ»?‹¼_á¾•6¼²J‘>)3Ù¼šT¾ §h; `¾1(.L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi@L       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >ÖˆÕ?¦>S¡˜?£0            ?2¶/    ?‘ô    ?OØ°            L        parents[$l#L       ÿÿÿ                                     	   	      L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >€  ?   >°†>üÆ»?‹?   ¾•6?   >)3Ù?   ¾ §h; `¾1(.L       
-split_indices[$l#L         	}  !   T  ä              Ù            Y            L       
-split_type[$U#L                      L       sum_hessian[$d#L       BÀ\B¹à@FhB·'t?®)ã?ê»/?¢ïB´šY?£FèB²=‰?—3ìB¯ø¬?‘7^B­?º&¶L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;…]e»»ê¢>
-o3<Q5¾ÉJ<»¹ã½ç^…<'\W>0ú,<ÞƒŽ¾É6<RN¡¾ÀL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiAL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->Þ›ß?
-{    >ÿpt    ?"Dr    ??[ª    ?.í™            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  >ªª«>
-o3>ªª«¾ÉJ?   ½ç^…?   >0ú,>ªª«¾É6<RN¡¾ÀL       
-split_indices[$l#L       
-  ø  	_      ´      i       a       +            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¿,B½Š?…žÙB¸•º@úB´û@7ÜB²Ý?ƒG`B­ÓÊ@ bZBª&?ëlµL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :žÍü¼^ >¬Ú¼®öS=ÈUK¼?“¾&À<aë½ùêÃ¼å¼Ä>`‰E¹}ƒ>¾(k=Òø<½ãõêL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiBL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >Ï¾¢>ÔŒö    ?g@    ?%»    ?3î    ?ˆŒ¼?Ž´ˆ                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >ªª«>¬Ú?   =ÈUK?   ¾&À>ªª«½ùêÃ?   >€  ¹}ƒ>¾(k=Òø<½ãõêL       
-split_indices[$l#L          Ã  ±      C      	Ÿ      ß      ¸  v                L       
-split_type[$U#L                      L       sum_hessian[$d#L       B¾$B»ÜÅ?‘ÒåB¶·\@$­B³g?Ô-B­š@9¢B”¤}AG¬rB&i@/ÂxA*„™?é>ÈL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-º {<lá÷¾YxÏ<Çšê½ù>Å<B9>ú:D| >þŠ<}gn½Ý ?ºè„O> »„L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiCL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-?‚èÜ>Î /    >ó²´    >ïZ    >ù>    ?M¿(            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?€  ¾YxÏ=ªª«½ù>Å>€  >ú>ªª«>þŠ>ªª«½Ý ?ºè„O> »„L       
-split_indices[$l#L       
-  û         ?      S             ÿ            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B½(iB»'³?€-yB¸¯
-?ž)oBµ;=?ÜôB²ë_?“÷hB­Âc@%‰B§W-@MfºL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ¹¬ã¬<J…¾1ÞØ<¼^y½ì·´<ÈÎ>»Jº¿ü>pÀ<ˆ×á¾£—»’_=Ë÷½ÿÜg;¤ÏœL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiDL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       ?5c>Ð«'    ?
-Íj    >ôÞ     ?{=    ?\˜è>+€                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ¾1ÞØ>ªª«½ì·´>ÌÌÍ>»J>ªª«>pÀ>ªª«>€  »’_=Ë÷½ÿÜg;¤ÏœL       
-split_indices[$l#L         û  ä      	_       ™      	      š  	D                L       
-split_type[$U#L                      L       sum_hessian[$d#L       B¼¸Bº–?ˆžUB·Ð?ÁTB´Z?Ío[B²b?’, Bª;}@z¼¤Bœy¾@Üñ@6©‡?ˆ&9L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-¸ðÇ^<-Ä¾P^9òÆê=þc‘<,Ûð½úv7<§“’½÷Ã×;²?>#¦´<]§½ƒ¬1L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiEL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->û>Ä¾‚    >Å}¶    >Ä¬    ?0äÚ    >ÛXˆ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ¾P^?   =þc‘?€  ½úv7?   ½÷Ã×>€  >#¦´<]§½ƒ¬1L       
-split_indices[$l#L       
-  û               ¨      ·      v            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¼"¾B¹çÓ?ŽºÊB·L¬?¦É—B´Ç‹?¡H]B²hñ?—¦wB¯Jê?Ç¤B¡#`@âxŸL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       º¼l‹¼dšð=û`·¼Èb»>D¼9€y½ô…½>ˆ»•½€Ê=>EQ2>û™ø¾,ž*¼ÒN?=Òëô>.<ÕLðL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiFL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >üÈ>áµ    >ãøÂ    ?2Nµ    ?±Ø—?æ-Ø?Ea    >&~è                    L        parents[$l#L       ÿÿÿ                                           	   	      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?€  =û`·>ªª«>D>€  ½ô…?   ?   >€  >EQ2>ªª«¾,ž*¼ÒN?=Òëô>.<ÕLðL       
-split_indices[$l#L         ç   ˜      ´      i      ç  ¸  %      š                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       B»cíB·¸Ý?êÃýBµJ?›´ˆB±–@n B¢À%@åçBžô?òåä@¿0g?šÚªB˜
-@]>@–{Ã?¢ÒL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;š¢V»ž}>
-²¼„î•>!{ä¸·.q¾Æy£¼T­.>Ê{¾¼q–ü¼Ê>ÒQ¼4PÄ=ôÔ8L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiGL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >ÏfÃ?V    ?t!    ?ˆ>ð?“ð            >ëe:            L        parents[$l#L       ÿÿÿ                                              L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >
-²>ªª«>!{ä?   >I%?   >Ê{¾¼q–ü?   >ÒQ¼4PÄ=ôÔ8L       
-split_indices[$l#L         T  ”      4      ·   C                ç            L       
-split_type[$U#L                      L       sum_hessian[$d#L       B»®˜B¹«^?€Î•B·ª0?€K¢B±îï@7hB¯.?³ð!?Ü·»?’vB­M?†øQBªr?À6ÊL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       <‚\<˜WC½þk<òa&½Ï@Æ=%± ¾æö=OMs¾ ¿õ=ŠN‚¾zøU<ßÓ½‡ÑØ½×‚<FM„L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiHL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >ÅiQ>ÀÚ³    ?ðÎ    >ãò†    >îe¨    ?uÕ>*@P                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ½þk?€  ½Ï@Æ?   ¾æö?   ¾ ¿õ>ªª«>€  <ßÓ½‡ÑØ½×‚<FM„L       
-split_indices[$l#L         û  ã      «       ž      	e      ß  Ñ                L       
-split_type[$U#L                      L       sum_hessian[$d#L       B»®"B¹xm?m6Bµ±?ñºëB³£q?ƒ„'B±~›?‰5cB©XÈ@‚]8Båt@·5>@3ûn?¡~L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       9¼]T>Ý<hÐ¾ÁÜé;.¿=õnW¿«À<â Ê<š:½ñ¾Lð½ ¥;_ k>3câ»kág> )L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiIL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >ÄÎ7?O
-f    >Î÷>ÈúØ?ƒ¬    >]Ëø    ?:Õä            ?;±            L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >ªª«>€  >Ý?€  >ªª«?   =õnW>€  <â Ê?   ½ñ¾Lð½ ¥?   >3câ»kág> )L       
-split_indices[$l#L           ¢      e  ß  	Ÿ      	Ÿ      y              ‹            L       
-split_type[$U#L                        L       sum_hessian[$d#L       B¹…B·&?ÁB®Z5@’OB«!?Ñ…@`]•?ˆ9B¦
-n@ ÖN@V?¸~B£šh?œÁ”BŸ™…@ eL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;AÛ¼&Ö> ¾¼ª° >p >7ÝºÈ­7¼V¾
-lÏ¼»‹v>
-Ÿ>»× è¾1ÉÉ»Ä¿>&°dL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiJL       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >Ãã¥>ãD5>5«®>Û>¾            ?&    ?Hçj    ?#„            L        parents[$l#L       ÿÿÿ                                     	   	      L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   >€  ?   >p >7ÝºÈ­7?   ¾
-lÏ?   >
-Ÿ>>ªª«¾1ÉÉ»Ä¿>&°dL       
-split_indices[$l#L         	}  !   T  ä                    C      	l            L       
-split_type[$U#L                      L       sum_hessian[$d#L       B¹/oB³†h@5 êB±2Ç?”è9?ÒÌÜ?—t÷B®­o?¡VB«ºö?¼ž&B¨ËV?»èB¦¨Ž?ˆ±ùL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;«Iš»|=:=öÿÐ¼THû=øZ¼¶=@=æÂA½!É >Dýp½_?>ºÅ>«Fƒ½ –Ü¼'PÖ¾3¼>÷¼[€L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiKL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >­?Ü>²‘<    >­#Ø    >®àF    ?Šé?H?`^Ù    >Àè                    L        parents[$l#L       ÿÿÿ                                           	   	      L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-      ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   =öÿÐ?   =øZ>ªª«=æÂA?   >€  >ªª«>ºÅ>ªª«½ –Ü¼'PÖ¾3¼>÷¼[€L       
-split_indices[$l#L         ²  )             È        ð         —                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       B¹8B¶Û}?Œî¯B´Âe?†FB²aS?˜D‘B¦ž/@¼29B£Ú?ßÕU@•´‡?™öÇBŸ·@ DR@:Ci?âKKL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-<¬ñ<ŠÂ½èZî;Ô$>
-C±»l¶È>
-×9<ï×¾î<ªQÏ¾¥);Aæ>ÝL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiLL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->¦®>Ù·    >Ò§‘    ?	Î    >éyV    >ñˆÔ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  >€  ½èZî?   >
-C±?   >
-×9?   ¾î>ªª«¾¥);Aæ>ÝL       
-split_indices[$l#L       
-    S      °      ã      ä      	V            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¸éýB¶¥t?‘"+B´i¿?ŽíGB²[Ô?ƒzçB¯C<?Æ&B¬óy?“ðÄB©Lœ?é·L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;ÆÇ¸»2dÓ=ðoá;åà©¾MÆ<r½ò`ø;»Ç6>
-3<¤|q¾4æ<!A¾kcL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiML       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->¡÷æ>Åçš    >Ê;a    >êš¿    ?Œ    >äté            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?*ª«?   =ðoá?   ¾MÆ?   ½ò`ø?   >
-3?   ¾4æ<!A¾kcL       
-split_indices[$l#L       
-  š   4      ã      ç             v            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¸;&B¶Z?Š²þB³ïÚ?ˆçB±)[?±Ÿ°B®aq?±ú¯B«;2?ÉÃB¨ò ?’JL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :×&¢»áZ¯=ïà3¼™ì>—n»û´"¾îç=þ¶Ó:¶„<Û×h¾-:=1‹¾1Pt½2sb¾Rg*<™¾w¾ýî=›¾BLoL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idiNL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ      
-   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >žXO>«Ü”    >àEµ=õï>ý˜v            ?@Lý?{a^?I‚¦    ?£…¾                    L        parents[$l#L       ÿÿÿ                                   	   	   
-   
-         
-   
-L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       >€  ?   =ïà3?   ?   >€  ¾îç=þ¶Ó:¶„?€  >€  ?€  ¾1Pt>€  ¾Rg*<™¾w¾ýî=›¾BLoL       
-split_indices[$l#L          |  	}        	Ÿ  	Ÿ              -  ð  ¥      	D                    L       
-split_type[$U#L                          L       sum_hessian[$d#L       B·#sBµ"[?€FB°N@!Á›B­Ê>?’ƒ÷?¿3#?„PB™ýAi‚BŽ–%?€ö AI )?ÿB‹aP?Í5;A*ã?õägL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-»“%¼VÃ=íƒx¼³ù2=ßNî½fø=ÁL?½2~=Ä
-t½^é‚=ä¥@¼ 3=Ý9¤L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiOL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
-> ½Ø>ŸT    >¥þ    >¸ñs    >ÐÙ    >Ílš            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?€  =íƒx>€  =ßNî?   =ÁL??   =Ä
-t=ÌÌÍ=ä¥@¼ 3=Ý9¤L       
-split_indices[$l#L       
-  “  þ      X      -            Ý            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-BµB³|ò?'‡B±2!?’´KB­©-?â<ÞB©øm?ì0/B§WÜ?¨$'B¤À?¥ð L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;}i3<l¡­½·»þ¨g>‡ñ¤¼ÔPö>-w…? xP¾©S»©«¾Ñ¶>Däš;Ép9¼ÊþË>OÉ½!‹6¾A%ÆºüÝÕ¾*qãL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                          L       idiPL       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿ   ÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >™^0?%Ú    ?bg?ÁþT?&)Ä    >È¡h    ?ˆ›N>24        ?@nm                    L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-   
-   
-L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿ   ÿÿÿÿ      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  ½·?   ?   ?   >-w…>€  ¾©S>ªª«>ªª«>Däš;Ép9>ªª«>OÉ½!‹6¾A%ÆºüÝÕ¾*qãL       
-split_indices[$l#L         à  i      ç  ¸  µ      ð      ¼   ~           +                    L       
-split_type[$U#L                          L       sum_hessian[$d#L       B¶{åB²)„@
-LB¥uî@Ë9oB¢:E?Îê@¡‘Ã?¦ž°B›ÍÖ@Mï@j<?±ÎÜB™N‘?ŸÑ
-@j4?ŠGvB–"K?ËžL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       19L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;Haa<T3½Ü5(:)êF>å©<‡é¶¾µ%Þ»`ø>±¡^¾Á¼q™Ã¼žªJ>1ox>V3¾M²¼D+=¿}¾L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiQL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	      
-ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >ªB>òH    ?å    ?¾‹>s ?E'¯?Îê
-        ?Ÿ                    L        parents[$l#L       ÿÿÿ                                                    L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-      ÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   ½Ü5(>ªª«>å©>€  >I%?   >€  ¾Á¼q™Ã>ªª«>1ox>V3¾M²¼D+=¿}¾L       
-split_indices[$l#L         	E        4      %   C  ç  i          È                    L       
-split_type[$U#L                        L       sum_hessian[$d#L       Bµ…~B²ö?½"B¯†?ÃÜB©Æ«@7[DB¡ðy@zÆ@?Å?©™vBŸˆ?œ<q@0>½?•B—Ø@tðŸL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;¦_Z<c&½í‹Æ;Dw³=ðÿ<Vü‚¾ Hk»>6“>µ°½{Ý>LÌ>HG;˜eú¼…Ÿ>…=Ø‰r½ã—DL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiRL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	      
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >£é>¼ð    >Ï<Ÿ    >öè    ?ó>)‚?#¸„?—ÕÀ                        L        parents[$l#L       ÿÿÿ                                           	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  =ªª«½í‹Æ?   =ðÿ>€  ¾ Hk>ªª«=ãŽ9>€  >€  >HG;˜eú¼…Ÿ>…=Ø‰r½ã—DL       
-split_indices[$l#L            ?            ú      ß  ˜  	"  	«                        L       
-split_type[$U#L                        L       sum_hessian[$d#L       B´è¾B²Ó¯?…CûB¯Æ?ÃfœB­¿K?²9B§Õœ@=5ÙB‘ÌA2>…?êco?BB¿€?ó’ÔA{@
-ÞL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;¹à<jê?½Ü¤æ<Í\[½º,=ž…½Å!c=Gî¾J=z_–½×”b<E°=ôƒOL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiSL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->•â*>     >Ï@§    >ê:    >ßÿ˜    ?C’            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
->€  >ªª«½Ü¤æ?   ½º,?   ½Å!c>ªª«¾J?   ½×”b<E°=ôƒOL       
-split_indices[$l#L       
-  	À  ´       a       P      ›       ¾            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B³ôiB±§í?“ïB­ ”@ ëB©@1øB§?‚ºAB£²“?Öb Bœ=<@nªýL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ¸¯…+<«u½Õ+éºÿu=â€³<\i9¾‰˜¼Ny|>”g•½ÜàØ¾h±<
-Šj¾=+Ú>Õ¦½‰È <ôÛ<½¼Lã¼RêÓ=óQ->>4á½½EL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                            L       idiTL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	      
-   ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >”²G>µ'g    >¹È¯    ?ž=•%”?|æJ?s#>:÷¨    ?Ã.½    ?>Îä                            L        parents[$l#L       ÿÿÿ                                                 	   	         
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-         ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >ªª«½Õ+é>ªª«=â€³>ªª«>ªª«?   >ªª«>ªª«¾h±>ªª«¾=+Ú=ãŽ9½‰È <ôÛ<½¼Lã¼RêÓ=óQ->>4á½½EL       
-split_indices[$l#L         ä  Ð      	      š  š   a  ß  ß      ß      ˜                            L       
-split_type[$U#L                            L       sum_hessian[$d#L       B²ÞfB°*_?­­B¬Û?ÓÓ%B¥7†@tq¡B˜ºˆ@ÇÏå@, Y?¢B•{d?ÏÈÃ@¤óò?‹oË?Ç“0?­ƒB…@þÄc@ið?Á“ëL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       21L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-º‘ã¼#O?=ï½‡¼ý=à~H¼D¾	;vµ±½å8»ÌÖ~=þ¤£;ˆÅ[½„ù°L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiUL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->¡‡´>¢¶ù    >ÎÇR    >Çƒ    >³¹     >·X            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   =ï½‡?   =à~H?   ¾	>€  ½å8>€  =þ¤£;ˆÅ[½„ù°L       
-split_indices[$l#L       
-  ”   ‚            à      X      v            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B±º?B¯²ª?åYB­K?™æíB«è?ŒÉ‹B§j?ëyB¥Yê?„UB˜”¡@ÌT‰L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-¸j4Ô<
-ŒO½Þ„4<–½Í½¿=q=;½·Y<¨B¡>$,ã=È·½Ü¼	<eƒá½âžOL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiVL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->-S>“=Ý    >Ö1    ?àø    >ÍgÄ    >ïÊ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?€  ?   ½Þ„4?   ½¿=q?   ½·Y>ªª«>$,ã>ªª«½Ü¼	<eƒá½âžOL       
-split_indices[$l#L       
-  û  C      	Ÿ      y       +      ´            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B±uÍB¯Jú?Š´óB«Õ=?ÝoB¥ÛÌ@?.#B£ÊÔ?„>B e~?ÙUxBœÈq?çCbL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       »f±R¼tÀb>‘$y¼ÑZg>ï=ù3;ÎM‰½ßg=ãÃ‹¼ÃŸ‘½î‚º¼8.$¾%†»Üë÷>MöL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idiWL       
-left_children[$l#L                    ÿÿÿÿÿÿÿÿÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >—È/>Ø«·=ÑcX>¬ñB            >§7    >ïì€    >ÖMA            L        parents[$l#L       ÿÿÿ                                     	   	      L       right_children[$l#L                   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  >€  ?€  >ï=ù3;ÎM‰?   =ãÃ‹?   ½î‚º?   ¾%†»Üë÷>MöL       
-split_indices[$l#L         	}  S   T  	s              ã       T      
-            L       
-split_type[$U#L                      L       sum_hessian[$d#L       B°VˆB«j	@åB©Hý?ˆBæ?§¢•?“}5B§¾?ùB£üO?Å›±B¡„Š?ñ5BŸe,?‡×L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-9çp½<Íy½Ä‡9O­Á=øžQ¼ è¡=ãÂ×¼¤wU=ý¹u½Wý=Ðl0¼_Gd=ë·¡L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiXL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->‡%Ö>¦D}    >¦ ¿    >ÁÈÌ    >·áz    >ü$V            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?€  ½Ä‡?   =øžQ?€  =ãÂ×>LÌÍ=ý¹u>ªª«=Ðl0¼_Gd=ë·¡L       
-split_indices[$l#L       
-  V  þ      ç       ˜      ±      	]            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B°r,B­qh?À0èB«`á?„!¾B¨Ã?§vÌB¦ ?ˆÀvB£9q?Ù¤ïBŸ®!?âÓþL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;½ãØ»1dV=Ý’~¼5ú=ÜzQ;Á-¾”Û¼0	>
-Ïe½0½ëˆC;º)ô¾´õ»‚¼Ä>
-Tn¾å¼¾`¡L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idiYL       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >Š•o>ŠjE    >§–x    ?Þë<Lì >îÌª            ?.”–=8ñH                L        parents[$l#L       ÿÿÿ                                                    L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   =Ý’~?   =ÜzQ>LÌÍ>ªª«>ªª«>
-Ïe½0½ëˆC?   >€  »‚¼Ä>
-Tn¾å¼¾`¡L       
-split_indices[$l#L          C        µ      ±  È   a              f  ð                L       
-split_type[$U#L                        L       sum_hessian[$d#L       B°Ì‹B®™³?Œ¶6B¬Ž¡?‚ÄXB¦’+@?ŽÉB£ÛÊ?­˜!?öÖ–?ˆFýBž3~@5	†B™•²@¹ˆ?äöÂ?…JL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;ÒÉ<raº½Ït<½
-A½Õ•™<<æ¼>
-åòºM\>—Z¼~û=ù——< ("½†H”L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiZL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->…Å8>‹Š/    >Ú:Ÿ    >å0Ó    ?!    ?3’³            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
->€  ?€  ½Ït=ªª«½Õ•™?€  >
-åò?€  >—Z>€  =ù——< ("½†H”L       
-split_indices[$l#L       
-  	À         ?      e      >      	Ÿ            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B°ŠCB®63?•þB¬&M?ƒù™B©£?? Ã–B¦È?¶¬kB¢ÑY?ýÍBˆ—|AQÎæL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;ÍL´<wy½ÌŒÚ;Y=ØíŸ¼'Ü=ä¢Ü¸Ö/½óx#¼f%=ï!¹˜¼½Ýa%L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi[L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->Šõ>²È    >Ý -    >§'É    >èGr    >Â†p            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   >ªª«½ÌŒÚ?   =ØíŸ?€  =ä¢Ü>ªª«½óx#>ªª«=ï!¹˜¼½Ýa%L       
-split_indices[$l#L       
-  ä  	V      	}       K      “                   L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B°$JB­Š±?¦f>B©¨5?øŸ0B¥ˆÒ@ìMB£Cò?‘8BŸzÕ?òG"B›aÌ@!.L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;˜/7<hõ®½¼”¹©ÍU>µØ<kŒx½Ë)d;Y.> ü<øÓø¾8EQ<ˆuè½ÿ¤9½®Z*=á«YL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi\L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ      
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >‰é-?sð    >Ö-D    >Åú’    >Ñ‚    ?TG5?5"Ú                L        parents[$l#L       ÿÿÿ                                     	   	   
-   
-L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   >€  ½¼”?   >µØ?   ½Ë)d>I%> ü>€  >ªª«<ˆuè½ÿ¤9½®Z*=á«YL       
-split_indices[$l#L         C  	"      	Ÿ      !       C      ¢   M                L       
-split_type[$U#L                      L       sum_hessian[$d#L       B¯¨ÐB¬F:?Ø¥B¨R&?ýB¢û$@*àDB Ð?ŠÄ¾B“QAåúB‡®Ö@<vA Ôè?ˆ‘L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;jY<`Ës½£…<Ð
-%½ÁWË;â%ž>àD?»¥¼ò> ^h>1+I<ú7³<O9¾ÅM;âˆ&¾L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi]L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >zg´>­ˆ    ?#[c    >Íý~=Þkh?	±_            ?±g            L        parents[$l#L       ÿÿÿ                                              L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?   ?   ½£…>€  ½ÁWË?   =ãŽ9?   > ^h>1+I<ú7³>ªª«¾ÅM;âˆ&¾L       
-split_indices[$l#L          œ  j      ú        ˜  C               +            L       
-split_type[$U#L                      L       sum_hessian[$d#L       B®›¹Bª@–óB¦Z@ÔëB Û?@%£XBž:0?¨CÉ?©²Þ?¡“ÓB›¼.?Ÿ€€B™¾?­\ L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       :»³<±Ž½ÌþI<ª’Ý¾uv!<ÿM>)½ºd¼<ªÙ½ÝÂs;ó½:=á
-‰;â» ½ªÅaL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                      L       idi^L       
-left_children[$l#L             ÿÿÿÿ          	ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >r—º>q    >Ëæ¿=/ÇÌ>¼Æ            >½	'    >·3ž            L        parents[$l#L       ÿÿÿ                                   	   	      L       right_children[$l#L             ÿÿÿÿ         
-ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  >LÌÍ½ÌþI>LÌÍ>€  >ªª«>)½ºd¼?   ½ÝÂs>ªª«=á
-‰;â» ½ªÅaL       
-split_indices[$l#L         û  	!      ±   T  ›              ‹       ~            L       
-split_type[$U#L                      L       sum_hessian[$d#L       B­rÍB«Sr?‡ÖÐB¥ñ@8°*B¢É4?±/-?ñW÷?€^BŸV?ÎwB›š?ýTEB•Da@J´ƒL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       15L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-¹çÁ ¼†G=Ô2x¼Ÿ ¢=®%‹¼s,½úý:Îaõ½æWñ¼?g¬>ùŒ¼#$%=³$&L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idi_L       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->‚7J>Œ~    >®[ø    >¢Ö¹    ?å°    ?ú&            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
->€  ?   =Ô2x?   =®%‹?€  ½úý?   ½æWñ>ªª«>ùŒ¼#$%=³$&L       
-split_indices[$l#L       
-  S  	}      ä      	E            È            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¬º‹Bª“;?‰Ó÷B¦^»@B£ôV?š™<B¡V¸?§grBŸ)?cÂB–9w@û L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       ;ZG»¾ðÉ=ÌB{¼vX=®$c¼õ'k>X¹M¼}®>½ãà=ÌŒ	½@L½+±>‰rÉ¼œ#s=âu¡>	Pd½ÀÕL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L                        L       idi`L       
-left_children[$l#L             ÿÿÿÿ   ÿÿÿÿ       	   ÿÿÿÿÿÿÿÿÿÿÿÿ   
-   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       >jä,>oÞ«    >•}m    >Ç{Æ>”¾â?áG            ?*0K?W÷                L        parents[$l#L       ÿÿÿ                                                    L       right_children[$l#L             ÿÿÿÿ   ÿÿÿÿ      
-   ÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       ?€  ?   =ÌB{>€  =®$c>ªª«?   >ªª«½ãà=ÌŒ	½@L>€  >€  ¼œ#s=âu¡>	Pd½ÀÕL       
-split_indices[$l#L         þ  ë      .      4  ¸  š              %  i                L       
-split_type[$U#L                        L       sum_hessian[$d#L       B¬È¾Bª®?†®ÌB§@S?Ûk×Bž’+@Šâ‡Bš"@£@U‹ ?€tBŽ´@¹—B‰
-,@0Ñ @“=?—aðL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       17L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;¢÷‹<Rr½À[<·0>½Ñér<G#Ð=ê<E<¯Ì½è===#Ù¾7<fGö½¡bÅL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idiaL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->cŠ>™<    >œÓP    >Ÿz·    ?qß    >¥€‚            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?€  ½À[?   ½Ñér?€  =ê<E?   ½è==>ªª«¾7<fGö½¡bÅL       
-split_indices[$l#L       
-   4  	E                   T      4            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B¬±cBªfV?’Ã'B§Âˆ?¨óB¥!†?¨@™B£!Z?€
-ÿB À?˜S×B›¬¨@"lOL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-ºxu[¼Í=Âwô¼¦9>> 1U¼=Ný½à×¼¼˜=è8½ã=ÑZ¹¼LI=Þ"7L       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idibL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->fôï>áÁB    >€Eé    >Âý¾    >Š¥Y    >¦Ä            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   ?   =Âwô?€  > 1U?   ½à×?€  =è8?   =ÑZ¹¼LI=Þ"7L       
-split_indices[$l#L       
-  5  ·       K      ë       ˜      ç            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B«ZÊB¨ýn?—VÙB¦¹?‘îB¤¡	?†hB¡¿¿?¸RtBŸ½É?€}B‰?ˆóL       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}{L       base_weights[$d#L       
-;”˜’<IS¿½³|û:æ\Å=Äø»ów<=Üqï¼£”=Ä»º¼ódü=Õ¨M»¾Â“½ú°ÿL       
-categories[$l#L        L       categories_nodes[$l#L        L       categories_segments[$L#L        L       categories_sizes[$L#L        L       default_left[$U#L       
-             L       idicL       
-left_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ    ÿÿÿÿ   	ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       loss_changes[$d#L       
->P!¤>>    >ùK    >°%Û    >™ßS    >šTÕ            L        parents[$l#L       
-ÿÿÿ                                     	   	L       right_children[$l#L       
-      ÿÿÿÿ   ÿÿÿÿ   ÿÿÿÿ   
-ÿÿÿÿ   ÿÿÿÿÿÿÿÿÿÿÿÿL       split_conditions[$d#L       
-?   >ªª«½³|û?   =Äø>ªª«=Üqï=ªª«=Ä»º?   =Õ¨M»¾Â“½ú°ÿL       
-split_indices[$l#L       
-  ä  	V      !      “       ?      v            L       
-split_type[$U#L       
-             L       sum_hessian[$d#L       
-B«›ÄB©.? %B¥p?ê§®B£2Õ?n„BŸc@®CBœ®l?•½¥Bš’±?†î¬L       
-tree_param{L       num_deletedSL       0L       num_featureSL       2500L       	num_nodesSL       13L       size_leaf_vectorSL       1}}}L       nameSL       gbtree}L       learner_model_param{L       
-base_scoreSL       9.1923773E-1L       boost_from_averageSL       1L       	num_classSL       0L       num_featureSL       2500L       
-num_targetSL       1}L       	objective{L       nameSL       binary:logisticL       reg_loss_param{L       scale_pos_weightSL       1}}}L        version[#L       ii i }}•
-       ”…”R”sbub.

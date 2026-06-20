@@ -36,6 +36,17 @@ start_service "Weather Agent" "weather_agent_mcp.py"
 start_service "Itinerary Agent" "itinerary_agent_mcp.py"
 start_service "Event Agent" "event_agent_mcp.py"
 
+# Start the Sentiment API in a new terminal window
+echo "Starting Sentiment API..."
+osascript <<EOD
+tell application "Terminal"
+    do script "cd '$PWD/../sentiment' && python api.py"
+    set currentTab to the result
+    set custom title of currentTab to "Sentiment API"
+end tell
+EOD
+sleep 1
+
 # Start the Node.js server in the current terminal
 echo "Starting Node.js server..."
 cd ..

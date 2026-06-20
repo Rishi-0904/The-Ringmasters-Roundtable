@@ -9,7 +9,16 @@
     "preview": "vite preview",
     "start:backend": "cd backend && npm start",
     "dev:backend": "cd backend && npm run dev",
-    "start:full": "concurrently \"npm run dev\" \"npm run dev:backend\""
+    "agent:orchestrator": "cd backend/mcp-ai && venv\\Scripts\\python -u orchestrator_mcp.py",
+    "agent:map": "cd backend/mcp-ai && venv\\Scripts\\python -u map_agent_mcp.py",
+    "agent:weather": "cd backend/mcp-ai && venv\\Scripts\\python -u weather_agent_mcp.py",
+    "agent:itinerary": "cd backend/mcp-ai && venv\\Scripts\\python -u itinerary_agent_mcp.py",
+    "agent:event": "cd backend/mcp-ai && venv\\Scripts\\python -u event_agent_mcp.py",
+    "agent:budget": "cd backend/mcp-ai && venv\\Scripts\\python -u budget_agent_mcp.py",
+    "sentiment:api": "cd backend/sentiment && python api.py",
+    "start:agents": "concurrently \"npm run agent:orchestrator\" \"npm run agent:map\" \"npm run agent:weather\" \"npm run agent:itinerary\" \"npm run agent:event\" \"npm run agent:budget\"",
+    "start:full": "concurrently \"npm run dev\" \"npm run dev:backend\"",
+    "start:all": "concurrently \"npm run dev\" \"npm run dev:backend\" \"npm run agent:orchestrator\" \"npm run agent:map\" \"npm run agent:weather\" \"npm run agent:itinerary\" \"npm run agent:event\" \"npm run agent:budget\" \"npm run sentiment:api\""
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.8.1",
