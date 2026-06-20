@@ -3,6 +3,7 @@ node_modules/
 backend/venv/
 venv/
 .venv/
+**/venv/
 **/__pycache__/
 
 # Build and cache outputs
