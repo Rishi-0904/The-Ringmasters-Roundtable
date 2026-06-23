@@ -38,6 +38,7 @@ const NAV_STRUCTURE = [
       { key: 'compare', name: 'Compare', path: '/compare', icon: FaBalanceScale },
       { key: 'budget', name: 'Budget', path: '/budget', icon: FaMoneyBillWave },
       { key: 'crystal', name: 'Crystal Ball', path: '/crystal-ball', icon: GiCrystalBall },
+      { key: 'assistant', name: 'AI Assistant', path: '/assistant', icon: FaUserCircle },
     ],
   },
   { key: 'plan', type: 'cta', name: 'Plan Trip', path: '/planner', icon: FaRoute },

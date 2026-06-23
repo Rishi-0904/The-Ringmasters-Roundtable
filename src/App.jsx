@@ -17,6 +17,7 @@ import PlanTrip from './pages/PlanTrip';
 import Dashboard from './pages/Dashboard';
 import Community from './pages/Community';
 import CrystalBall from './pages/CrystalBall';
+import AIAssistant from './pages/AIAssistant';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/trip-summary" element={<TripSummary />} />
             <Route path="/community" element={<Community />} />
             <Route path="/crystal-ball" element={<CrystalBall />} />
+            <Route path="/assistant" element={<AIAssistant />} />
             <Route
               path="/planner"
               element={

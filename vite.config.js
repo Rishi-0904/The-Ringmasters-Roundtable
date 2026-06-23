@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;",
           "font-src 'self' https://fonts.gstatic.com data:;",
           "img-src 'self' data: blob: https://*.tile.openstreetmap.org https://images.unsplash.com;",
-          "connect-src 'self' ws://localhost:5173 ws://127.0.0.1:5173 ws://localhost:3000 ws://127.0.0.1:3000 http://localhost:3000 http://127.0.0.1:3000 https://identitytoolkit.googleapis.com https://firestore.googleapis.com https://securetoken.googleapis.com https://cdn.jsdelivr.net https://unpkg.com https://lottie.host https://apis.google.com https://www.gstatic.com https://api.openweathermap.org https://tile.openweathermap.org;",
+          "connect-src 'self' ws://localhost:5173 ws://127.0.0.1:5173 ws://localhost:3000 ws://127.0.0.1:3000 http://localhost:3000 http://127.0.0.1:3000 http://localhost:8000 http://127.0.0.1:8000 https://identitytoolkit.googleapis.com https://firestore.googleapis.com https://securetoken.googleapis.com https://cdn.jsdelivr.net https://unpkg.com https://lottie.host https://apis.google.com https://www.gstatic.com https://api.openweathermap.org https://tile.openweathermap.org;",
           "frame-src 'self' https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com;",
           "worker-src 'self' blob:;",
           "media-src 'self' https://*.tile.openstreetmap.org;",
