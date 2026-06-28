@@ -44,7 +44,7 @@ const ENABLE_RABBITMQ = process.env.ENABLE_RABBITMQ === 'true';
 const clientDistPath = path.join(__dirname, "client", "dist");
 const hasClientBuild = fs.existsSync(clientDistPath);
 
-const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173"];
+const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173", "https://the-ringmasters-roundtable.vercel.app"];
 // --- SOCKET.IO CONFIGURATION ---
 const io = new Server(server, {
   path: "/socket.io/",
@@ -72,15 +72,15 @@ const corsOptions = {
   origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: [
-    "Content-Type", 
-    "Authorization", 
+    "Content-Type",
+    "Authorization",
     "x-api-key",
     "Access-Control-Allow-Origin",
     "Access-Control-Allow-Headers"
   ],
   exposedHeaders: [
-    "Content-Length", 
-    "X-Foo", 
+    "Content-Length",
+    "X-Foo",
     "X-Bar"
   ],
   credentials: true
@@ -137,66 +137,66 @@ async function connectRabbitMQ() {
     return amqpChannel;
   }
 
-    try {
-        console.log(` [Server] Attempting to connect to RabbitMQ (${RABBITMQ_URL})...`);
-        const connection = await amqp.connect(RABBITMQ_URL);
-        amqpConnection = connection;
+  try {
+    console.log(` [Server] Attempting to connect to RabbitMQ (${RABBITMQ_URL})...`);
+    const connection = await amqp.connect(RABBITMQ_URL);
+    amqpConnection = connection;
 
-        connection.on('close', () => {
-            console.warn(' [Server] RabbitMQ connection closed. Scheduling reconnect...');
-            amqpConnection = null;
-            amqpChannel = null;
-            scheduleRabbitReconnect();
-        });
+    connection.on('close', () => {
+      console.warn(' [Server] RabbitMQ connection closed. Scheduling reconnect...');
+      amqpConnection = null;
+      amqpChannel = null;
+      scheduleRabbitReconnect();
+    });
 
-        connection.on('error', (error) => {
-            console.error(' [Server] RabbitMQ connection error:', error.message);
-        });
+    connection.on('error', (error) => {
+      console.error(' [Server] RabbitMQ connection error:', error.message);
+    });
 
-        const channel = await connection.createChannel();
-        amqpChannel = channel;
-        console.log(' [Server] Connected to RabbitMQ');
+    const channel = await connection.createChannel();
+    amqpChannel = channel;
+    console.log(' [Server] Connected to RabbitMQ');
 
-        // Ensure all necessary queues exist
-        await channel.assertQueue('trip_requests_queue', { durable: true });
-        await channel.assertQueue('trip_status_queue', { durable: true });
-        await channel.assertQueue('trip_results_queue', { durable: true });
+    // Ensure all necessary queues exist
+    await channel.assertQueue('trip_requests_queue', { durable: true });
+    await channel.assertQueue('trip_status_queue', { durable: true });
+    await channel.assertQueue('trip_results_queue', { durable: true });
 
-        // Listener for STATUS updates from the Python orchestrator
-        channel.consume('trip_status_queue', (msg) => {
-            if (msg !== null) {
-                const status = JSON.parse(msg.content.toString());
-                if (status.client_sid) {
-                    io.to(status.client_sid).emit('status_update', { message: status.message });
-                }
-                channel.ack(msg);
-            }
-        });
-        
-        // Listener for FINAL results from the Python orchestrator
-        channel.consume('trip_results_queue', (msg) => {
-            if (msg !== null) {
-                const result = JSON.parse(msg.content.toString());
-                const { trip_id } = result;
-                console.log(` [Server] Received final result for trip ${trip_id}`);
-                if (tripSubscribers.has(trip_id)) {
-                    const clientSid = tripSubscribers.get(trip_id);
-                    io.to(clientSid).emit('trip_result', result);
-                    tripSubscribers.delete(trip_id); // Clean up
-                }
-                channel.ack(msg);
-            }
-        });
-        
-        amqpChannel = channel;
-        return channel;
-    } catch (error) {
-        console.error(' [Server] RabbitMQ connection error. Retrying in 5 seconds...', error.message);
-        amqpConnection = null;
-        amqpChannel = null;
-        scheduleRabbitReconnect();
-        return null;
-    }
+    // Listener for STATUS updates from the Python orchestrator
+    channel.consume('trip_status_queue', (msg) => {
+      if (msg !== null) {
+        const status = JSON.parse(msg.content.toString());
+        if (status.client_sid) {
+          io.to(status.client_sid).emit('status_update', { message: status.message });
+        }
+        channel.ack(msg);
+      }
+    });
+
+    // Listener for FINAL results from the Python orchestrator
+    channel.consume('trip_results_queue', (msg) => {
+      if (msg !== null) {
+        const result = JSON.parse(msg.content.toString());
+        const { trip_id } = result;
+        console.log(` [Server] Received final result for trip ${trip_id}`);
+        if (tripSubscribers.has(trip_id)) {
+          const clientSid = tripSubscribers.get(trip_id);
+          io.to(clientSid).emit('trip_result', result);
+          tripSubscribers.delete(trip_id); // Clean up
+        }
+        channel.ack(msg);
+      }
+    });
+
+    amqpChannel = channel;
+    return channel;
+  } catch (error) {
+    console.error(' [Server] RabbitMQ connection error. Retrying in 5 seconds...', error.message);
+    amqpConnection = null;
+    amqpChannel = null;
+    scheduleRabbitReconnect();
+    return null;
+  }
 }
 
 const ensureRabbitMQ = async () => {
@@ -207,71 +207,71 @@ const ensureRabbitMQ = async () => {
 
 // Only attempt to connect to RabbitMQ if enabled
 if (ENABLE_RABBITMQ) {
-    ensureRabbitMQ().catch((error) => {
-        console.error(' [Server] Failed to initialize RabbitMQ:', error.message);
-    });
+  ensureRabbitMQ().catch((error) => {
+    console.error(' [Server] Failed to initialize RabbitMQ:', error.message);
+  });
 } else {
-    console.log(' [Server] RabbitMQ is disabled (ENABLE_RABBITMQ is not set to true)');
+  console.log(' [Server] RabbitMQ is disabled (ENABLE_RABBITMQ is not set to true)');
 }
 
 io.on('connection', (socket) => {
-    console.log(` [Server] Client connected: ${socket.id}`);
+  console.log(` [Server] Client connected: ${socket.id}`);
 
-    // This is the new endpoint for planning a trip with the agent system
-    socket.on('plan_trip', async (data) => {
-        if (!ENABLE_RABBITMQ) {
-            return socket.emit('status_update', {
-                error: 'RabbitMQ is not enabled',
-                message: 'This feature requires RabbitMQ to be enabled and running.'
-            });
-        }
+  // This is the new endpoint for planning a trip with the agent system
+  socket.on('plan_trip', async (data) => {
+    if (!ENABLE_RABBITMQ) {
+      return socket.emit('status_update', {
+        error: 'RabbitMQ is not enabled',
+        message: 'This feature requires RabbitMQ to be enabled and running.'
+      });
+    }
 
-        const channel = await ensureRabbitMQ();
-        if (!channel) {
-            return socket.emit('status_update', { 
-                error: 'RabbitMQ is not enabled or not connected',
-                message: 'This feature requires RabbitMQ to be enabled and running.' 
-            });
-        }
-        
-        const trip_id = uuidv4();
-        tripSubscribers.set(trip_id, socket.id);
+    const channel = await ensureRabbitMQ();
+    if (!channel) {
+      return socket.emit('status_update', {
+        error: 'RabbitMQ is not enabled or not connected',
+        message: 'This feature requires RabbitMQ to be enabled and running.'
+      });
+    }
 
-        const message = {
-            trip_id,
-            client_sid: socket.id, 
-            payload: {
-                start_city: data.start_city,
-                end_city: data.end_city,
-                start_date: data.start_date,
-                end_date: data.end_date,
-                num_days: parseInt(data.num_days, 10),
-                transport_mode: data.transport_mode || 'train_flight',
-            },
-        };
+    const trip_id = uuidv4();
+    tripSubscribers.set(trip_id, socket.id);
 
-        try {
-            // Send the job to the Python orchestrator
-            channel.sendToQueue(
-              'trip_requests_queue',
-              Buffer.from(JSON.stringify(message)),
-              { persistent: true }
-            );
+    const message = {
+      trip_id,
+      client_sid: socket.id,
+      payload: {
+        start_city: data.start_city,
+        end_city: data.end_city,
+        start_date: data.start_date,
+        end_date: data.end_date,
+        num_days: parseInt(data.num_days, 10),
+        transport_mode: data.transport_mode || 'train_flight',
+      },
+    };
 
-            console.log(` [Server] Sent job for trip ${trip_id} to orchestrator.`);
-            socket.emit('status_update', { message: `Trip request sent for ${data.start_city} to ${data.end_city}.` });
-        } catch (error) {
-            console.error(' [Server] Failed to enqueue trip request:', error.message);
-            socket.emit('status_update', {
-              error: 'Failed to queue trip request',
-              message: 'RabbitMQ accepted the connection but queueing failed. Check server logs.'
-            });
-        }
-    });
+    try {
+      // Send the job to the Python orchestrator
+      channel.sendToQueue(
+        'trip_requests_queue',
+        Buffer.from(JSON.stringify(message)),
+        { persistent: true }
+      );
 
-    socket.on('disconnect', () => {
-        console.log(` [Server] Client disconnected: ${socket.id}`);
-    });
+      console.log(` [Server] Sent job for trip ${trip_id} to orchestrator.`);
+      socket.emit('status_update', { message: `Trip request sent for ${data.start_city} to ${data.end_city}.` });
+    } catch (error) {
+      console.error(' [Server] Failed to enqueue trip request:', error.message);
+      socket.emit('status_update', {
+        error: 'Failed to queue trip request',
+        message: 'RabbitMQ accepted the connection but queueing failed. Check server logs.'
+      });
+    }
+  });
+
+  socket.on('disconnect', () => {
+    console.log(` [Server] Client disconnected: ${socket.id}`);
+  });
 });
 
 
@@ -318,7 +318,7 @@ app.get("/api/directions", async (req, res) => {
 
   try {
     console.log(`Fetching route from ${origin} to ${destination} via ${mode}`);
-    
+
     // Add error handling for geocoding
     let start, end;
     try {
@@ -365,16 +365,16 @@ app.get("/api/directions", async (req, res) => {
         errorData = { error: 'Invalid response from routing service' };
       }
       console.error('OpenRouteService error:', errorData);
-      return res.status(response.status).json({ 
+      return res.status(response.status).json({
         error: errorData.error?.message || 'Failed to fetch directions',
         details: errorData
       });
     }
 
     const data = await response.json();
-    
+
     if (!data.features || data.features.length === 0) {
-      return res.status(404).json({ 
+      return res.status(404).json({
         error: 'No route could be calculated',
         message: 'The routing service could not find a valid route between these points. Try adjusting your start or end points.',
         details: {
@@ -387,9 +387,9 @@ app.get("/api/directions", async (req, res) => {
 
     const routeData = data.features[0]; // Take the first (and typically only) route
     const segment = routeData.properties?.segments?.[0];
-    
+
     if (!segment) {
-      return res.status(404).json({ 
+      return res.status(404).json({
         error: 'No valid route segments found',
         message: 'The routing service returned an incomplete route. Please try different locations or transportation mode.',
         details: {
@@ -416,9 +416,9 @@ app.get("/api/directions", async (req, res) => {
 
   } catch (error) {
     console.error('Directions error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to calculate route',
-      message: error.message 
+      message: error.message
     });
   }
 });
@@ -438,17 +438,17 @@ app.post('/api/itinerary', async (req, res) => {
       console.error(`[${requestId}] Error: ${errorMsg}`);
       return res.status(400).json({ error: errorMsg });
     }
-    
+
     console.log(`[${requestId}] Fetching data for ${days}-day trip to ${destination}`);
 
     // Fetch all data in parallel from the mock service
     const [attractions, restaurants, hotels, weather] = await Promise.all([
-        freeDataService.getAttractions(destination, budget),
-        freeDataService.getRestaurants(destination, budget),
-        freeDataService.getHotels(destination, budget),
-        freeDataService.getWeather(destination)
+      freeDataService.getAttractions(destination, budget),
+      freeDataService.getRestaurants(destination, budget),
+      freeDataService.getHotels(destination, budget),
+      freeDataService.getWeather(destination)
     ]);
-    
+
     console.log(`[${requestId}] Data fetched: ${attractions.length} attractions, ${restaurants.length} restaurants, ${hotels.length} hotels.`);
 
     // Handle empty data
@@ -464,68 +464,68 @@ app.post('/api/itinerary', async (req, res) => {
     const start = new Date(startDate);
 
     for (let i = 0; i < days; i++) {
-        const currentDate = new Date(start);
-        currentDate.setDate(start.getDate() + i);
-        
-        // Use modulo to cycle through available data if there aren't enough unique items
-        const morningAttraction = attractions[i % attractions.length];
-        const lunchRestaurant = restaurants[i % restaurants.length];
-        const eveningRestaurant = restaurants[(i + 1) % restaurants.length]; // Different one for dinner
+      const currentDate = new Date(start);
+      currentDate.setDate(start.getDate() + i);
 
-        // Format location string from coordinates
-        const formatLocation = (item) => {
-          if (item.coordinates) {
-            return `${item.coordinates.lat.toFixed(4)}, ${item.coordinates.lon.toFixed(4)}`;
-          }
-          return destination;
-        };
+      // Use modulo to cycle through available data if there aren't enough unique items
+      const morningAttraction = attractions[i % attractions.length];
+      const lunchRestaurant = restaurants[i % restaurants.length];
+      const eveningRestaurant = restaurants[(i + 1) % restaurants.length]; // Different one for dinner
 
-        itineraryDays.push({
-            id: i + 1,
-            date: currentDate.toISOString().split('T')[0],
-            title: `Day ${i + 1}: Exploration & Culture`,
-            activities: [
-                { 
-                  id: 1, 
-                  time: '09:00', 
-                  title: `Visit ${morningAttraction.name}`, 
-                  type: 'sightseeing', 
-                  location: formatLocation(morningAttraction), 
-                  notes: morningAttraction.description || 'Explore this attraction', 
-                  duration: '3h' 
-                },
-                { 
-                  id: 2, 
-                  time: '12:30', 
-                  title: `Lunch at ${lunchRestaurant.name}`, 
-                  type: 'meal', 
-                  location: formatLocation(lunchRestaurant), 
-                  notes: `${lunchRestaurant.cuisine || 'Local'} cuisine`, 
-                  duration: '1h 30m', 
-                  price: lunchRestaurant.priceLevel || '$$' 
-                },
-                { 
-                  id: 3, 
-                  time: '19:00', 
-                  title: `Dinner at ${eveningRestaurant.name}`, 
-                  type: 'meal', 
-                  location: formatLocation(eveningRestaurant), 
-                  notes: `${eveningRestaurant.cuisine || 'Local'} cuisine`, 
-                  duration: '2h', 
-                  price: eveningRestaurant.priceLevel || '$$' 
-                },
-            ]
-        });
+      // Format location string from coordinates
+      const formatLocation = (item) => {
+        if (item.coordinates) {
+          return `${item.coordinates.lat.toFixed(4)}, ${item.coordinates.lon.toFixed(4)}`;
+        }
+        return destination;
+      };
+
+      itineraryDays.push({
+        id: i + 1,
+        date: currentDate.toISOString().split('T')[0],
+        title: `Day ${i + 1}: Exploration & Culture`,
+        activities: [
+          {
+            id: 1,
+            time: '09:00',
+            title: `Visit ${morningAttraction.name}`,
+            type: 'sightseeing',
+            location: formatLocation(morningAttraction),
+            notes: morningAttraction.description || 'Explore this attraction',
+            duration: '3h'
+          },
+          {
+            id: 2,
+            time: '12:30',
+            title: `Lunch at ${lunchRestaurant.name}`,
+            type: 'meal',
+            location: formatLocation(lunchRestaurant),
+            notes: `${lunchRestaurant.cuisine || 'Local'} cuisine`,
+            duration: '1h 30m',
+            price: lunchRestaurant.priceLevel || '$$'
+          },
+          {
+            id: 3,
+            time: '19:00',
+            title: `Dinner at ${eveningRestaurant.name}`,
+            type: 'meal',
+            location: formatLocation(eveningRestaurant),
+            notes: `${eveningRestaurant.cuisine || 'Local'} cuisine`,
+            duration: '2h',
+            price: eveningRestaurant.priceLevel || '$$'
+          },
+        ]
+      });
     }
 
     const itinerary = {
-        destination,
-        duration: `${days} days`,
-        travelDates: `${start.toLocaleDateString()} - ${new Date(start.getTime() + (days - 1) * 24 * 60 * 60 * 1000).toLocaleDateString()}`,
-        travelers,
-        budget: freeDataService.getBudgetSymbol(budget),
-        weather,
-        days: itineraryDays,
+      destination,
+      duration: `${days} days`,
+      travelDates: `${start.toLocaleDateString()} - ${new Date(start.getTime() + (days - 1) * 24 * 60 * 60 * 1000).toLocaleDateString()}`,
+      travelers,
+      budget: freeDataService.getBudgetSymbol(budget),
+      weather,
+      days: itineraryDays,
     };
 
     console.log(`[${requestId}] ✅ Itinerary generated successfully for ${destination}`);
@@ -553,14 +553,14 @@ function calculateScore(attractions = [], restaurants = []) {
       overall: 2.5
     };
   }
-  
+
   // Calculate scores based on number of attractions and restaurants
   const maxAttractions = 20; // Consider 20+ attractions as maximum
   const maxRestaurants = 15; // Consider 15+ restaurants as maximum
-  
+
   const attractionScore = Math.min(attractions.length / maxAttractions, 1) * 5;
   const restaurantScore = Math.min(restaurants.length / maxRestaurants, 1) * 5;
-  
+
   const scores = {
     food: parseFloat(restaurantScore.toFixed(1)),
     culture: parseFloat(attractionScore.toFixed(1)),
@@ -568,7 +568,7 @@ function calculateScore(attractions = [], restaurants = []) {
     nightlife: parseFloat((restaurantScore * 0.8).toFixed(1)),
     shopping: parseFloat(((attractionScore * 0.4) + (restaurantScore * 0.6)).toFixed(1))
   };
-  
+
   // Calculate overall score (weighted average)
   const weights = {
     food: 0.2,
@@ -577,7 +577,7 @@ function calculateScore(attractions = [], restaurants = []) {
     nightlife: 0.15,
     shopping: 0.15
   };
-  
+
   scores.overall = parseFloat((
     scores.food * weights.food +
     scores.culture * weights.culture +
@@ -585,7 +585,7 @@ function calculateScore(attractions = [], restaurants = []) {
     scores.nightlife * weights.nightlife +
     scores.shopping * weights.shopping
   ).toFixed(1));
-  
+
   return scores;
 }
 
@@ -661,9 +661,9 @@ if (hasClientBuild) {
 // --- ERROR HANDLER ---
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ 
+  res.status(500).json({
     error: 'Something went wrong!',
-    message: err.message 
+    message: err.message
   });
 });
 // --- START SERVER ---
@@ -671,7 +671,7 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
   console.log(`WebSocket server is running on ws://0.0.0.0:${PORT}/socket.io/`);
   console.log('Server is ready to accept connections');
-  
+
   // Connect to RabbitMQ if enabled
   if (process.env.ENABLE_RABBITMQ === 'true') {
     connectRabbitMQ().catch(console.error);
@@ -699,13 +699,13 @@ process.on('uncaughtException', (err) => {
 app.get('/api/flights', async (req, res) => {
   try {
     const { origin, destination, date } = req.query;
-    
+
     if (!origin || !destination || !date) {
       return res.status(400).json({
         error: 'Missing required parameters: origin, destination, and date are required'
       });
     }
-    
+
     // getFlights from services/amadeus.js handles token retrieval internally
     const flights = await getFlights(origin, destination, date);
     res.json(flights);
@@ -722,13 +722,13 @@ app.get('/api/flights', async (req, res) => {
 app.get(['/api/trains', '/trains/getTrainOn'], async (req, res) => {
   try {
     const { from, to, date } = req.query;
-    
+
     if (!from || !to || !date) {
       return res.status(400).json({
         error: 'Missing required parameters: from, to, and date are required'
       });
     }
-    
+
     // Placeholder response - implement actual train search logic here
     res.json({
       message: 'Train search endpoint',
@@ -830,7 +830,7 @@ const getRailStationCode = (iataCode) => {
 app.get("/api/travel", async (req, res) => {
   const requestId = Math.random().toString(36).substring(2, 8);
   console.log(`\n=== New Travel Request (ID: ${requestId}) ===`);
-  
+
   try {
     // Extract parameters
     const origin = String(req.query.origin || '').trim().toUpperCase();
@@ -839,7 +839,7 @@ app.get("/api/travel", async (req, res) => {
     const checkInDate = String(req.query.checkInDate || date).trim();
     const checkOutDate = String(req.query.checkOutDate || '').trim();
     const adults = parseInt(req.query.adults) || 1;
-    
+
     // Log raw parameters for debugging
     console.log(`[${requestId}] Raw parameters:`, {
       origin,
@@ -872,13 +872,13 @@ app.get("/api/travel", async (req, res) => {
     } else if (!IATA_CODES.has(origin)) {
       console.warn(`[${requestId}] Warning: Origin '${origin}' is not in the list of known IATA codes`);
     }
-    
+
     if (!destination || !iataRegex.test(destination)) {
       errors.push(`Invalid destination: '${destination}'. Must be a 3-letter IATA code`);
     } else if (!IATA_CODES.has(destination)) {
       console.warn(`[${requestId}] Warning: Destination '${destination}' is not in the list of known IATA codes`);
     }
-    
+
     // Validate dates
     if (!date || !dateRegex.test(date)) {
       errors.push(`Invalid date format: '${date}'. Use YYYY-MM-DD`);
@@ -898,37 +898,37 @@ app.get("/api/travel", async (req, res) => {
       errors.push(`Check-out date must be after check-in date (${checkInDate} < ${checkOutDate})`);
     }
 
-      // Return validation errors if any
-      if (errors.length > 0) {
-        console.error(`[${requestId}] Validation failed:`, errors);
-        return res.status(400).json({ 
-          success: false,
-          errors,
-          requestId,
-          receivedParams: req.query
-        });
-      }
-
-      console.log(`[${requestId}] Fetching travel data for ${origin} to ${destination} on ${date}`);
-      console.log(`[${requestId}] Check-in: ${checkInDate}, Check-out: ${checkOutDate}, Adults: ${adults}`);
-      
-      // Log environment variables (without sensitive data)
-      console.log(`[${requestId}] Environment:`, {
-        NODE_ENV: process.env.NODE_ENV,
-        AMADEUS_CLIENT_ID: process.env.AMADEUS_CLIENT_ID ? '***' + process.env.AMADEUS_CLIENT_ID.slice(-4) : 'MISSING',
-        AMADEUS_CLIENT_SECRET: process.env.AMADEUS_CLIENT_SECRET ? '***' + process.env.AMADEUS_CLIENT_SECRET.slice(-4) : 'MISSING'
+    // Return validation errors if any
+    if (errors.length > 0) {
+      console.error(`[${requestId}] Validation failed:`, errors);
+      return res.status(400).json({
+        success: false,
+        errors,
+        requestId,
+        receivedParams: req.query
       });
+    }
 
-      // City code mapping for common cities (case-insensitive)
-      const cityCodeMap = {
-        'bombay': 'BOM',
-        'bangalore': 'BLR',
-        'chennai': 'MAA',
-        'kolkata': 'CCU',
-        'hyderabad': 'HYD',
-        'pune': 'PNQ',
-        'ahmedabad': 'AMD',
-        'goa': 'GOI',
+    console.log(`[${requestId}] Fetching travel data for ${origin} to ${destination} on ${date}`);
+    console.log(`[${requestId}] Check-in: ${checkInDate}, Check-out: ${checkOutDate}, Adults: ${adults}`);
+
+    // Log environment variables (without sensitive data)
+    console.log(`[${requestId}] Environment:`, {
+      NODE_ENV: process.env.NODE_ENV,
+      AMADEUS_CLIENT_ID: process.env.AMADEUS_CLIENT_ID ? '***' + process.env.AMADEUS_CLIENT_ID.slice(-4) : 'MISSING',
+      AMADEUS_CLIENT_SECRET: process.env.AMADEUS_CLIENT_SECRET ? '***' + process.env.AMADEUS_CLIENT_SECRET.slice(-4) : 'MISSING'
+    });
+
+    // City code mapping for common cities (case-insensitive)
+    const cityCodeMap = {
+      'bombay': 'BOM',
+      'bangalore': 'BLR',
+      'chennai': 'MAA',
+      'kolkata': 'CCU',
+      'hyderabad': 'HYD',
+      'pune': 'PNQ',
+      'ahmedabad': 'AMD',
+      'goa': 'GOI',
       'kochi': 'COK',
       'jaipur': 'JAI',
       'lucknow': 'LKO',
@@ -995,7 +995,7 @@ app.get("/api/travel", async (req, res) => {
     const originRailCode = getRailStationCode(originCode);
     const destRailCode = getRailStationCode(destCode);
     console.log(`[${requestId}] Rail station codes:`, { originRailCode, destRailCode });
-    
+
     // Validate date format (YYYY-MM-DD)
     if (!dateRegex.test(date)) {
       throw new Error('Invalid date format. Please use YYYY-MM-DD');
@@ -1005,7 +1005,7 @@ app.get("/api/travel", async (req, res) => {
     let hotelCheckIn, hotelCheckOut;
     try {
       hotelCheckIn = checkInDate || date;
-      
+
       // If no check-out date provided, default to check-in + 1 day
       if (!checkOutDate) {
         const nextDay = new Date(date);
@@ -1014,7 +1014,7 @@ app.get("/api/travel", async (req, res) => {
       } else {
         hotelCheckOut = checkOutDate;
       }
-      
+
       // Final validation of dates
       if (new Date(hotelCheckOut) <= new Date(hotelCheckIn)) {
         throw new Error('Check-out date must be after check-in date');
@@ -1023,12 +1023,12 @@ app.get("/api/travel", async (req, res) => {
       console.error(`[${requestId}] Error processing dates:`, error);
       errors.push(`Invalid date range: ${error.message}`);
     }
-    
+
     console.log(`[${requestId}] Starting data fetch...`);
     console.log(`[${requestId}] Flight search: ${originCode} -> ${destCode} on ${date}`);
     console.log(`[${requestId}] Hotel search: ${destCode} from ${hotelCheckIn} to ${hotelCheckOut}`);
     console.log(`[${requestId}] Train search: ${originRailCode} -> ${destRailCode} on ${date}`);
-    
+
     // Fetch data in parallel
     const [flightsRaw, hotelsRaw, rawTrains] = await Promise.all([
       // Flights
@@ -1048,7 +1048,7 @@ app.get("/api/travel", async (req, res) => {
           return [];
         }
       })(),
-      
+
       // Hotels
       (async () => {
         try {
@@ -1066,7 +1066,7 @@ app.get("/api/travel", async (req, res) => {
           return [];
         }
       })(),
-        
+
       // Trains
       (async () => {
         try {
@@ -1128,7 +1128,7 @@ app.get("/api/travel", async (req, res) => {
           seatsAvailable: train.seats_available || 0
         }
       };
-      
+
       console.log(`[${requestId}] Formatted train:`, JSON.stringify(formattedTrain, null, 2));
       return formattedTrain;
     });
@@ -1231,13 +1231,13 @@ app.get("/api/travel", async (req, res) => {
     }
 
     // Prepare the final response
-    const result = { 
+    const result = {
       flights: formattedFlights,
       hotels: formattedHotels,
       trains: formattedTrains,
       cheapestTrip: cheapestTrip || null
     };
-    
+
     // Log the response structure
     console.log(`[${requestId}] Sending response with data`);
     console.log(`[${requestId}] Response structure:`, {
@@ -1246,13 +1246,13 @@ app.get("/api/travel", async (req, res) => {
       trains: { count: result.trains.length, hasPrices: result.trains.some(t => t.price > 0) },
       hasCheapestTrip: !!result.cheapestTrip
     });
-    
+
     // Send the response
     res.json(result);
   } catch (err) {
     console.error("Error in /api/travel:", err);
     console.error("Error stack:", err.stack);
-    res.status(500).json({ 
+    res.status(500).json({
       error: err.message,
       stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
     });
