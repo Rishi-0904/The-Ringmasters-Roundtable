@@ -60,8 +60,9 @@ export default function EventRecommendations() {
         ...(endDate && { endDate }),
       });
 
+      const apiBase = import.meta.env.VITE_API_BASE_URL || "https://the-ringmasters-roundtable.onrender.com";
       const res = await fetch(
-        `http://localhost:3000/api/events?${params.toString()}`
+        `${apiBase.replace(/\/$/, '')}/api/events?${params.toString()}`
       );
       const data = await res.json();
       setEvents(Array.isArray(data) ? data : []);

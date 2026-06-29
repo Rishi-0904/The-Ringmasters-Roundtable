@@ -1,7 +1,7 @@
 import ENV from '../config/env';
 import { auth } from '../firebase';
 
-const API_BASE_URL = ENV.API_BASE_URL || 'http://localhost:3000';
+const API_BASE_URL = ENV.API_BASE_URL || 'https://the-ringmasters-roundtable.onrender.com';
 
 async function handleResponse(response) {
   if (!response.ok) {

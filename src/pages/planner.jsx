@@ -278,8 +278,8 @@ const Planner = () => {
     setLoading(true);
     setResult(null);
 
-    try {
-      const { data } = await axios.get("http://localhost:3000/api/travel", {
+      const apiBase = import.meta.env.VITE_API_BASE_URL || "https://the-ringmasters-roundtable.onrender.com";
+      const { data } = await axios.get(`${apiBase.replace(/\/$/, '')}/api/travel`, {
         params: {
           origin: origin.trim().toUpperCase(),
           destination: destination.trim().toUpperCase(),

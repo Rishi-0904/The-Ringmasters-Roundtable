@@ -244,10 +244,10 @@ const Compare = () => {
 
     setIsLoading(true);
     setError(null);
-
     try {
+      const apiBase = import.meta.env.VITE_API_BASE_URL || "https://the-ringmasters-roundtable.onrender.com";
       const res = await fetch(
-        `http://localhost:3000/api/compare`,
+        `${apiBase.replace(/\/$/, '')}/api/compare`,
         {
           method: 'POST',
           headers: {

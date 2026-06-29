@@ -1,6 +1,6 @@
 import ENV from '../config/env';
 
-const API_BASE_URL = ENV.API_BASE_URL || 'http://localhost:3000';
+const API_BASE_URL = ENV.API_BASE_URL || 'https://the-ringmasters-roundtable.onrender.com';
 
 const defaultHeaders = () => ({
   'Content-Type': 'application/json',

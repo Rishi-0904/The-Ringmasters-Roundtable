@@ -2,8 +2,9 @@ import axios from 'axios';
 import { auth } from '../firebase';
 
 // Create axios instance with base URL
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://the-ringmasters-roundtable.onrender.com';
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api', // Directly point to the backend API
+  baseURL: `${API_BASE.replace(/\/$/, '')}/api`, // Point to backend API
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
